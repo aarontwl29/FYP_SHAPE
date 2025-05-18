@@ -6,11 +6,17 @@ import time
 import os
 
 # === MODIFY THESE 2 VALUES FOR OTHER MOVIES ===
-movie_url = "https://www.rottentomatoes.com/m/sinners_2025/reviews?type=user"
-movie_name = "Sinners"
-# =============================================
+movie_url = "https://www.rottentomatoes.com/m/warfare/reviews?type=user"
+movie_name = "Warfare"
+# ==============================================
 
-# Setup Chrome
+CHUNK_SIZE = 100
+MAX_REVIEWS = 500  
+output_dir = "Reviews"
+output_path = os.path.join(output_dir, f"Reviews_rt_{movie_name}.json")
+
+os.makedirs(output_dir, exist_ok=True)
+
 options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
@@ -19,46 +25,74 @@ driver = webdriver.Chrome(options=options)
 
 try:
     driver.get(movie_url)
-    time.sleep(4)
+    time.sleep(5)
 
-    # Click "Load More" 4 times
-    for i in range(4):
+    processed_count = 0
+    total_saved_reviews = 0
+
+    if not os.path.exists(output_path):
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump([], f)
+
+    while total_saved_reviews < MAX_REVIEWS:
+        review_elements = driver.find_elements(By.CSS_SELECTOR, 'div.audience-review-row[data-qa="review-item"]')
+        new_reviews = review_elements[processed_count:]
+
+        if not new_reviews:
+            print("⚠️ No new reviews loaded.")
+            break
+
+        chunk = []
+
+        for idx, review in enumerate(new_reviews, start=processed_count + 1):
+            try:
+                rating = review.find_element(By.TAG_NAME, 'rating-stars-group').get_attribute('score')
+            except:
+                rating = None
+
+            try:
+                text = review.find_element(By.CSS_SELECTOR, 'p.audience-reviews__review.js-review-text').text.strip()
+            except:
+                text = ""
+
+            chunk.append({
+                "rating": f"{rating}/5" if rating else None,
+                "review": text
+            })
+
+            preview = " ".join(text.split()[:5])
+            print(f"{idx:>3}. {preview}...")
+
+            if idx >= MAX_REVIEWS:
+                break
+
+        with open(output_path, "r", encoding="utf-8") as f:
+            existing_data = json.load(f)
+
+        existing_data.extend(chunk[:MAX_REVIEWS - total_saved_reviews])
+
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(existing_data, f, indent=2, ensure_ascii=False)
+
+        total_saved_reviews = len(existing_data)
+        processed_count += len(new_reviews)
+
+        print(f"💾 Saved chunk: {len(chunk)} reviews. Total saved: {total_saved_reviews}\n")
+
+        if total_saved_reviews >= MAX_REVIEWS:
+            break
+
         try:
             load_more = driver.find_element(By.CSS_SELECTOR, 'rt-button[data-qa="load-more-btn"]')
             driver.execute_script("arguments[0].scrollIntoView(true);", load_more)
             time.sleep(1)
             load_more.click()
-            time.sleep(4)
+            time.sleep(3)
         except:
-            print(f"Stopped early: Load More not found on click {i+1}")
+            print("⚠️ Load More button not found or finished.")
             break
 
-    # Scrape reviews
-    review_elements = driver.find_elements(By.CSS_SELECTOR, 'div.audience-review-row[data-qa="review-item"]')
-
-    reviews = []
-    for review in review_elements[:100]:
-        try:
-            rating = review.find_element(By.TAG_NAME, 'rating-stars-group').get_attribute('score')
-        except:
-            rating = None
-        try:
-            text = review.find_element(By.CSS_SELECTOR, 'p.audience-reviews__review.js-review-text').text.strip()
-        except:
-            text = ""
-        reviews.append({
-            "rating": f"{rating}/5" if rating else None,
-            "review": text
-        })
-
-    # Output file path
-    output_path = f"Reviews/Reviews_rt_{movie_name}.json"
-
-    # Save JSON
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(reviews, f, indent=2, ensure_ascii=False)
-
-    print(f"✅ Saved {len(reviews)} reviews to {output_path}")
+    print(f"✅ Done! Total reviews saved: {total_saved_reviews} → {output_path}")
 
 finally:
     driver.quit()
