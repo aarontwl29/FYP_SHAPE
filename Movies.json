@@ -34,7 +34,40 @@
         }
       }
       ,
-  { ...movie2... },
+      {
+        "title": "Sinners",
+        "year": "2025",
+        "length_minutes": 137,
+        "genre": [
+          "Period Drama",
+          "Supernatural Horror",
+          "Vampire Horror",
+          "Action",
+          "Drama",
+          "Horror",
+          "Thriller"
+        ],
+        "description": "Trying to leave their troubled lives behind, twin brothers (Michael B. Jordan) return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
+        "director": "Ryan Coogler",
+        "stars": [
+          "Michael B. Jordan",
+          "Miles Caton",
+          "Saul Williams"
+        ],
+        "rating_imdb": {
+          "score": 8.1,
+          "votes": 97000
+        },
+        "rating_rt_tomatometer": {
+          "score": 97,
+          "reviews": 361
+        },
+        "rating_rt_popcorn": {
+          "score": 96,
+          "votes": 25000
+        }
+      }
+      ,
   { ...movie1... },
   { ...movie2... },
   { ...movie1... },
