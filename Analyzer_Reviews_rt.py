@@ -9,7 +9,7 @@ from nltk.corpus import stopwords
 # python3 -m nltk.downloader punkt averaged_perceptron_tagger stopwords
 
 # STEP 1: Load JSON reviews
-with open("Reviews/Reviews.json", "r") as f:
+with open("Adventure/Reviews_rt_Interstellar.json", "r") as f:
     data = json.load(f)
 reviews = [d["review"] for d in data]
 
@@ -25,9 +25,10 @@ EXCLUDE_ADJECTIVES = {
     "entire", "sound", "cinematic", "full", "whole",
     "social", "favorite", "accountant", "main", "cant", "third",
     "anna", "unicorn", "unicorns", "jurassic", "a24", "rich",
-    "able", "narrative", "una", "jack", "chicken", "video", "que"
+    "able", "narrative", "una", "jack", "chicken", "video", "que",
+    "impossible", "absolute", "mejor", "due", "dead", "previous",
+    "usual", "weak", "live", "wish", "sci-fi", "interstellar"
 }
-
 
 EXCLUDE_KEYWORDS = {
     "movie", "movies", "film", "films", "filme", "story", "acting", "end", "cast",
@@ -41,9 +42,10 @@ EXCLUDE_KEYWORDS = {
     "credits", "stars", "layers", "one", "line", "wait", "attention", "amount",
     "favor", "turns", "role", "roles", "kind", "audience", "minutes",
     "genre", "tone", "something", "director", "feature", "a24",
-    "screen", "con", "para", "references", "place"
+    "screen", "con", "para", "references", "place",
+    "ledger", "ledgers", "cinema", "face", "point", "key", "feels",
+    "voice", "reviews", "viewer", "level"
 }
-
 
 
 
