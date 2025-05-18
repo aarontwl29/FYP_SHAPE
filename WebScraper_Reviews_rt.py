@@ -6,8 +6,8 @@ import time
 import os
 
 # === MODIFY THESE 2 VALUES FOR OTHER MOVIES ===
-movie_url = "https://www.rottentomatoes.com/m/thunderbolts/reviews?type=user"
-movie_name = "Thunderbolts*"
+movie_url = "https://www.rottentomatoes.com/m/sinners_2025/reviews?type=user"
+movie_name = "Sinners"
 # =============================================
 
 # Setup Chrome
