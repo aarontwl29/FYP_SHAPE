@@ -5,94 +5,97 @@ import json
 import time
 import os
 
-# === MODIFY THESE 2 VALUES FOR OTHER MOVIES ===
-movie_url = ""
-movie_name = "The"
-# ==============================================
+from movie_list import movies
 
 CHUNK_SIZE = 100
-MAX_REVIEWS = 500  
+MAX_REVIEWS = 500
 output_dir = "Reviews"
-output_path = os.path.join(output_dir, f"Reviews_rt_{movie_name}.json")
-
 os.makedirs(output_dir, exist_ok=True)
 
 options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 options.add_argument('--no-sandbox')
-driver = webdriver.Chrome(options=options)
 
-try:
-    driver.get(movie_url)
-    time.sleep(5)
+for movie in movies:
+    movie_url = movie["url"]
+    movie_name = movie["name"]
+    output_path = os.path.join(output_dir, f"Reviews_rt_{movie_name}.json")
 
-    processed_count = 0
-    total_saved_reviews = 0
+    print(f"\n🔍 Scraping reviews for: {movie_name}")
 
-    if not os.path.exists(output_path):
-        with open(output_path, "w", encoding="utf-8") as f:
-            json.dump([], f)
+    driver = webdriver.Chrome(options=options)
 
-    while total_saved_reviews < MAX_REVIEWS:
-        review_elements = driver.find_elements(By.CSS_SELECTOR, 'div.audience-review-row[data-qa="review-item"]')
-        new_reviews = review_elements[processed_count:]
+    try:
+        driver.get(movie_url)
+        time.sleep(5)
 
-        if not new_reviews:
-            print("⚠️ No new reviews loaded.")
-            break
+        processed_count = 0
+        total_saved_reviews = 0
 
-        chunk = []
+        if not os.path.exists(output_path):
+            with open(output_path, "w", encoding="utf-8") as f:
+                json.dump([], f)
 
-        for idx, review in enumerate(new_reviews, start=processed_count + 1):
-            try:
-                rating = review.find_element(By.TAG_NAME, 'rating-stars-group').get_attribute('score')
-            except:
-                rating = None
+        while total_saved_reviews < MAX_REVIEWS:
+            review_elements = driver.find_elements(By.CSS_SELECTOR, 'div.audience-review-row[data-qa="review-item"]')
+            new_reviews = review_elements[processed_count:]
 
-            try:
-                text = review.find_element(By.CSS_SELECTOR, 'p.audience-reviews__review.js-review-text').text.strip()
-            except:
-                text = ""
-
-            chunk.append({
-                "rating": f"{rating}/5" if rating else None,
-                "review": text
-            })
-
-            preview = " ".join(text.split()[:5])
-            print(f"{idx:>3}. {preview}...")
-
-            if idx >= MAX_REVIEWS:
+            if not new_reviews:
+                print("⚠️ No new reviews loaded.")
                 break
 
-        with open(output_path, "r", encoding="utf-8") as f:
-            existing_data = json.load(f)
+            chunk = []
 
-        existing_data.extend(chunk[:MAX_REVIEWS - total_saved_reviews])
+            for idx, review in enumerate(new_reviews, start=processed_count + 1):
+                try:
+                    rating = review.find_element(By.TAG_NAME, 'rating-stars-group').get_attribute('score')
+                except:
+                    rating = None
 
-        with open(output_path, "w", encoding="utf-8") as f:
-            json.dump(existing_data, f, indent=2, ensure_ascii=False)
+                try:
+                    text = review.find_element(By.CSS_SELECTOR, 'p.audience-reviews__review.js-review-text').text.strip()
+                except:
+                    text = ""
 
-        total_saved_reviews = len(existing_data)
-        processed_count += len(new_reviews)
+                chunk.append({
+                    "rating": f"{rating}/5" if rating else None,
+                    "review": text
+                })
 
-        print(f"💾 Saved chunk: {len(chunk)} reviews. Total saved: {total_saved_reviews}\n")
+                preview = " ".join(text.split()[:5])
+                print(f"{idx:>3}. {preview}...")
 
-        if total_saved_reviews >= MAX_REVIEWS:
-            break
+                if idx >= MAX_REVIEWS:
+                    break
 
-        try:
-            load_more = driver.find_element(By.CSS_SELECTOR, 'rt-button[data-qa="load-more-btn"]')
-            driver.execute_script("arguments[0].scrollIntoView(true);", load_more)
-            time.sleep(1)
-            load_more.click()
-            time.sleep(3)
-        except:
-            print("⚠️ Load More button not found or finished.")
-            break
+            with open(output_path, "r", encoding="utf-8") as f:
+                existing_data = json.load(f)
 
-    print(f"✅ Done! Total reviews saved: {total_saved_reviews} → {output_path}")
+            existing_data.extend(chunk[:MAX_REVIEWS - total_saved_reviews])
 
-finally:
-    driver.quit()
+            with open(output_path, "w", encoding="utf-8") as f:
+                json.dump(existing_data, f, indent=2, ensure_ascii=False)
+
+            total_saved_reviews = len(existing_data)
+            processed_count += len(new_reviews)
+
+            print(f"💾 Saved chunk: {len(chunk)} reviews. Total saved: {total_saved_reviews}\n")
+
+            if total_saved_reviews >= MAX_REVIEWS:
+                break
+
+            try:
+                load_more = driver.find_element(By.CSS_SELECTOR, 'rt-button[data-qa="load-more-btn"]')
+                driver.execute_script("arguments[0].scrollIntoView(true);", load_more)
+                time.sleep(1)
+                load_more.click()
+                time.sleep(3)
+            except:
+                print("⚠️ Load More button not found or finished.")
+                break
+
+        print(f"✅ Done! Total reviews saved: {total_saved_reviews} → {output_path}")
+
+    finally:
+        driver.quit()
