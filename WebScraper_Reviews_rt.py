@@ -6,8 +6,8 @@ import time
 import os
 
 # === MODIFY THESE 2 VALUES FOR OTHER MOVIES ===
-movie_url = "https://www.rottentomatoes.com/m/warfare/reviews?type=user"
-movie_name = "Warfare"
+movie_url = ""
+movie_name = "The"
 # ==============================================
 
 CHUNK_SIZE = 100
