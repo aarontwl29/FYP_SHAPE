@@ -1,5 +1,27 @@
 {
   "movie_name": "Disney's Snow White",
-  "top_emotions": [],
-  "top_keywords": []
+  "top_emotions": [
+    "white",
+    "snow",
+    "original",
+    "gal",
+    "classic",
+    "horrible",
+    "terrible",
+    "beautiful",
+    "real",
+    "old"
+  ],
+  "top_keywords": [
+    "disney",
+    "songs",
+    "dwarves",
+    "rachel",
+    "dwarfs",
+    "cgi",
+    "kids",
+    "zegler",
+    "gadot",
+    "queen"
+  ]
 }

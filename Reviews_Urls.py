@@ -221,7 +221,7 @@ movies = [
     
     
     {
-        "url": "https://www.rottentomatoes.com/m/now_you_see_me/reviews?type=userAAA",
+        "url": "https://www.rottentomatoes.com/m/now_you_see_me/reviews?type=user",
         "name": "Now You See Me"
     },
     {

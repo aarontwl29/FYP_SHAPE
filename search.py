@@ -12,12 +12,17 @@ def filter_by_genre(genre, movie_db):
 #     ]
 
 
+
+
+
 def filter_by_director(director_name, movie_db):
     """Returns a list of movies directed by the given person (case-insensitive)."""
     director_lower = director_name.lower()
     return [
         movie for movie in movie_db.values()
-        if director_lower in movie.director.lower()
+        if (
+            isinstance(movie.director, str) and director_lower in movie.director.lower()
+        ) or (
+            isinstance(movie.director, list) and any(director_lower in d.lower() for d in movie.director)
+        )
     ]
-
-

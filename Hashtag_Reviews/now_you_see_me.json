@@ -1,5 +1,27 @@
 {
   "movie_name": "Now You See Me",
-  "top_emotions": [],
-  "top_keywords": []
+  "top_emotions": [
+    "magic",
+    "big",
+    "entertaining",
+    "morgan",
+    "enjoyable",
+    "fun",
+    "stupid",
+    "interesting",
+    "clever",
+    "cool"
+  ],
+  "top_keywords": [
+    "plot",
+    "magic",
+    "tricks",
+    "twist",
+    "twists",
+    "ruffalo",
+    "magicians",
+    "mark",
+    "sense",
+    "trick"
+  ]
 }
