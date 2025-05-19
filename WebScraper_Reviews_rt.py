@@ -5,7 +5,8 @@ import json
 import time
 import os
 
-from movie_list import movies
+from Reviews_Urls import movies 
+from utils import normalize_title  
 
 CHUNK_SIZE = 100
 MAX_REVIEWS = 500
@@ -19,8 +20,12 @@ options.add_argument('--no-sandbox')
 
 for movie in movies:
     movie_url = movie["url"]
-    movie_name = movie["name"]
-    output_path = os.path.join(output_dir, f"Reviews_rt_{movie_name}.json")
+    movie_name = movie["name"].strip()
+
+    # Use normalized filename
+    safe_name = normalize_title(movie_name)
+    output_path = os.path.join(output_dir, f"reviews_{safe_name}.json")
+
 
     print(f"\n🔍 Scraping reviews for: {movie_name}")
 
@@ -33,9 +38,10 @@ for movie in movies:
         processed_count = 0
         total_saved_reviews = 0
 
+        # If not exist, create JSON with "movie_name" and "reviews": []
         if not os.path.exists(output_path):
             with open(output_path, "w", encoding="utf-8") as f:
-                json.dump([], f)
+                json.dump({"movie_name": movie_name, "reviews": []}, f, ensure_ascii=False, indent=2)
 
         while total_saved_reviews < MAX_REVIEWS:
             review_elements = driver.find_elements(By.CSS_SELECTOR, 'div.audience-review-row[data-qa="review-item"]')
@@ -69,15 +75,19 @@ for movie in movies:
                 if idx >= MAX_REVIEWS:
                     break
 
+            # Load existing file
             with open(output_path, "r", encoding="utf-8") as f:
                 existing_data = json.load(f)
 
-            existing_data.extend(chunk[:MAX_REVIEWS - total_saved_reviews])
+            existing_reviews = existing_data.get("reviews", [])
+            existing_reviews.extend(chunk[:MAX_REVIEWS - total_saved_reviews])
+            existing_data["reviews"] = existing_reviews
 
+            # Save updated JSON
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(existing_data, f, indent=2, ensure_ascii=False)
 
-            total_saved_reviews = len(existing_data)
+            total_saved_reviews = len(existing_reviews)
             processed_count += len(new_reviews)
 
             print(f"💾 Saved chunk: {len(chunk)} reviews. Total saved: {total_saved_reviews}\n")
