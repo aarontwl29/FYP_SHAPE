@@ -1,5 +1,1564 @@
 [
   {
+    "title": "A Complete Unknown",
+    "year": "2024",
+    "length_minutes": 141,
+    "genre": [
+      "Docudrama",
+      "Period Drama",
+      "Showbiz Drama",
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "description": "New York, 1961. Against the backdrop of a vibrant music scene and tumultuous cultural upheaval, an enigmatic 19-year-old from Minnesota arrives with his guitar and revolutionary talent, destined to change the course of American music. He forges intimate relationships with music icons of Greenwich Village on his meteoric rise, culminating in a groundbreaking and controversial performance that reverberates worldwide. Timothée Chalamet stars and sings as Bob Dylan in James Mangold's A COMPLETE UNKNOWN, the electric true story behind the rise of one of the most iconic singer-songwriters in history.",
+    "director": "James Mangold",
+    "stars": ["Timothée Chalamet", "Edward Norton", "Elle Fanning"],
+    "rating_imdb": {
+      "score": 7.4,
+      "votes": 83000
+    },
+    "rating_rt_tomatometer": {
+      "score": 82,
+      "reviews": 337
+    },
+    "rating_rt_popcorn": {
+      "score": 95,
+      "votes": 5000
+    }
+  },
+
+  {
+    "title": "A Minecraft Movie",
+    "year": "2025",
+    "length_minutes": 101,
+    "genre": [
+      "Action Epic",
+      "Adventure Epic",
+      "Fantasy Epic",
+      "High-Concept Comedy",
+      "Quest",
+      "Slapstick",
+      "Survival",
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    "description": "Welcome to the world of Minecraft, where creativity doesn't just help you craft, it's essential to one's survival! Four misfits--Garrett \"The Garbage Man\" Garrison (Jason Momoa), Henry (Sebastian Eugene Hansen), Natalie (Emma Myers) and Dawn (Danielle Brooks)--find themselves struggling with ordinary problems when they are suddenly pulled through a mysterious portal into the Overworld: a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world (and protect it from evil things like Piglins and Zombies, too) while embarking on a magical quest with an unexpected, expert crafter, Steve (Jack Black). Together, their adventure will challenge all five to be bold and to reconnect with the qualities that make each of them uniquely creative... the very skills they need to thrive back in the real world.",
+    "director": "Jared Hess",
+    "stars": ["Jason Momoa", "Jack Black", "Sebastian Hansen"],
+    "rating_imdb": {
+      "score": 5.8,
+      "votes": 89000
+    },
+    "rating_rt_tomatometer": {
+      "score": 48,
+      "reviews": 181
+    },
+    "rating_rt_popcorn": {
+      "score": 86,
+      "votes": 10000
+    }
+  },
+
+  {
+    "title": "A Simple Favor",
+    "year": "2018",
+    "length_minutes": 117,
+    "genre": [
+      "Dark Comedy",
+      "Psychological Thriller",
+      "Comedy",
+      "Crime",
+      "Mystery",
+      "Thriller"
+    ],
+    "description": "Stephanie is a widowed, single mother who works as a vlogger in Connecticut. Her best friend, Emily, seems to have it all -- a successful career, a loving family and a glamorous lifestyle. When Emily mysteriously disappears one day, Stephanie launches her own investigation by digging into her friend's past -- and finding a few surprises along the way.",
+    "director": "Paul Feig",
+    "stars": ["Anna Kendrick", "Blake Lively", "Henry Golding"],
+    "rating_imdb": {
+      "score": 6.8,
+      "votes": 182000
+    },
+    "rating_rt_tomatometer": {
+      "score": 84,
+      "reviews": 258
+    },
+    "rating_rt_popcorn": {
+      "score": 73,
+      "votes": 5000
+    }
+  },
+
+  {
+    "title": "A Working Man",
+    "year": "2025",
+    "length_minutes": 116,
+    "genre": [
+      "Conspiracy Thriller",
+      "One-Person Army Action",
+      "Action",
+      "Thriller"
+    ],
+    "description": "Levon Cade left behind a decorated military career in the black ops to live a simple life working construction. But when his boss's daughter, who is like family to him, is taken by human traffickers, his search to bring her home uncovers a world of corruption far greater than he ever could have imagined.",
+    "director": "David Ayer",
+    "stars": ["Jason Statham", "Jason Flemyng", "Merab Ninidze"],
+    "rating_imdb": {
+      "score": 5.7,
+      "votes": 36000
+    },
+    "rating_rt_tomatometer": {
+      "score": 49,
+      "reviews": 148
+    },
+    "rating_rt_popcorn": {
+      "score": 87,
+      "votes": 2500
+    }
+  },
+
+  {
+    "title": "Anora",
+    "year": "2024",
+    "length_minutes": 139,
+    "genre": [
+      "Dark Comedy",
+      "Raunchy Comedy",
+      "Steamy Romance",
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "description": "Sean Baker's Palme d'Or winner ANORA is an audacious, thrilling, and comedic variation on a modern day Cinderella story. Mikey Madison (ONCE UPON A TIME IN HOLLYWOOD) captivates as Ani, a young sex worker from Brooklyn whose life takes an unexpected turn when she meets and impulsively marries Vanya, the impetuous son of a Russian billionaire. However, when Vanya's parents catch wind of the union, they send their henchmen to annul the marriage, setting off a wild chase through the streets of New York.",
+    "director": "Sean Baker",
+    "stars": ["Mikey Madison", "Paul Weissman", "Yura Borisov"],
+    "rating_imdb": {
+      "score": 7.5,
+      "votes": 193000
+    },
+    "rating_rt_tomatometer": {
+      "score": 93,
+      "reviews": 341
+    },
+    "rating_rt_popcorn": {
+      "score": 84,
+      "votes": 1000
+    }
+  },
+  {
+    "title": "Another Simple Favor",
+    "year": "2025",
+    "length_minutes": 120,
+    "genre": [
+      "Dark Comedy",
+      "Whodunnit",
+      "Comedy",
+      "Crime",
+      "Mystery",
+      "Thriller"
+    ],
+    "description": "Stephanie Smothers (Anna Kendrick) and Emily Nelson (Blake Lively) reunite on the beautiful island of Capri, Italy, for Emily's extravagant wedding to a rich Italian businessman. Along with the glamorous guests, expect murder and betrayal to RSVP for a wedding with more twists and turns than the road from the Marina Grande to the Capri town square.",
+    "director": "Paul Feig",
+    "stars": ["Blake Lively", "Anna Kendrick", "Allison Janney"],
+    "rating_imdb": {
+      "score": 5.3,
+      "votes": 18000
+    },
+    "rating_rt_tomatometer": {
+      "score": 62,
+      "reviews": 130
+    },
+    "rating_rt_popcorn": {
+      "score": 38,
+      "votes": 1000
+    }
+  },
+
+  {
+    "title": "Babygirl",
+    "year": "2024",
+    "length_minutes": 114,
+    "genre": [
+      "Erotic Thriller",
+      "Workplace Drama",
+      "Drama",
+      "Romance",
+      "Thriller"
+    ],
+    "description": "A high-powered CEO puts her career and family on the line when she begins a torrid affair with her much younger intern.",
+    "director": "Halina Reijn",
+    "stars": ["Nicole Kidman", "Harris Dickinson", "Antonio Banderas"],
+    "rating_imdb": {
+      "score": 5.9,
+      "votes": 59000
+    },
+    "rating_rt_tomatometer": {
+      "score": 76,
+      "reviews": 259
+    },
+    "rating_rt_popcorn": {
+      "score": 48,
+      "votes": 1000
+    }
+  },
+  {
+    "title": "Beetlejuice Beetlejuice",
+    "year": "2024",
+    "length_minutes": 105,
+    "genre": [
+      "Dark Comedy",
+      "Dark Fantasy",
+      "Slapstick",
+      "Supernatural Fantasy",
+      "Supernatural Horror",
+      "Comedy",
+      "Fantasy",
+      "Horror"
+    ],
+    "description": "Beetlejuice is back! After an unexpected family tragedy, three generations of the Deetz family return home to Winter River. Still haunted by Beetlejuice, Lydia's life is turned upside down when her rebellious teenage daughter, Astrid, discovers the mysterious model of the town in the attic and the portal to the Afterlife is accidentally opened. With trouble brewing in both realms, it's only a matter of time until someone says Beetlejuice's name three times and the mischievous demon returns to unleash his very own brand of mayhem.",
+    "director": "Tim Burton",
+    "stars": ["Michael Keaton", "Winona Ryder", "Catherine O'Hara"],
+    "rating_imdb": {
+      "score": 6.6,
+      "votes": 150000
+    },
+    "rating_rt_tomatometer": {
+      "score": 75,
+      "reviews": 366
+    },
+    "rating_rt_popcorn": {
+      "score": 79,
+      "votes": 10000
+    }
+  },
+
+  {
+    "title": "Black Bag",
+    "year": "2025",
+    "length_minutes": 93,
+    "genre": ["Spy", "Drama", "Mystery", "Romance", "Thriller"],
+    "description": "BLACK BAG is a gripping spy drama about legendary intelligence agents George Woodhouse and his beloved wife Kathryn. When she is suspected of betraying the nation, George faces the ultimate test – loyalty to his marriage or his country.",
+    "director": "Steven Soderbergh",
+    "stars": ["Michael Fassbender", "Gustaf Skarsgård", "Cate Blanchett"],
+    "rating_imdb": {
+      "score": 6.8,
+      "votes": 45000
+    },
+    "rating_rt_tomatometer": {
+      "score": 96,
+      "reviews": 263
+    },
+    "rating_rt_popcorn": {
+      "score": 70,
+      "votes": 1000
+    }
+  },
+
+  {
+    "title": "Black Widow",
+    "year": "2021",
+    "length_minutes": 134,
+    "genre": ["Spy", "Superhero", "Action", "Adventure", "Sci-Fi"],
+    "description": "In Marvel Studios' action-packed spy thriller \"Black Widow,\" Natasha Romanoff aka Black Widow confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
+    "director": "Cate Shortland",
+    "stars": ["Scarlett Johansson", "Florence Pugh", "David Harbour"],
+    "rating_imdb": {
+      "score": 6.6,
+      "votes": 453000
+    },
+    "rating_rt_tomatometer": {
+      "score": 79,
+      "reviews": 460
+    },
+    "rating_rt_popcorn": {
+      "score": 91,
+      "votes": 10000
+    }
+  },
+  {
+    "title": "Captain America: Brave New World",
+    "year": "2025",
+    "length_minutes": 118,
+    "genre": [
+      "Action Epic",
+      "Adventure Epic",
+      "Sci-Fi Epic",
+      "Superhero",
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "description": "Anthony Mackie returns as the high-flying hero Sam Wilson, who's officially taken up the mantle of Captain America. After meeting with newly elected U.S. President Thaddeus Ross, Sam finds himself in the middle of an international incident. He must discover the reason behind a nefarious global plot before the true mastermind has the entire world seeing red.",
+    "director": "Julius Onah",
+    "stars": ["Anthony Mackie", "Harrison Ford", "Danny Ramirez"],
+    "rating_imdb": {
+      "score": 5.7,
+      "votes": 111000
+    },
+    "rating_rt_tomatometer": {
+      "score": 47,
+      "reviews": 343
+    },
+    "rating_rt_popcorn": {
+      "score": 78,
+      "votes": 10000
+    }
+  },
+
+  {
+    "title": "Clown in a Cornfield",
+    "year": "2025",
+    "length_minutes": 96,
+    "genre": [
+      "Dark Comedy",
+      "Slasher Horror",
+      "Teen Horror",
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "description": "Quinn and her father have just moved to the quiet town of Kettle Springs hoping for a fresh start. Instead, she discovers a fractured community that has fallen on hard times after the treasured Baypen Corn Syrup Factory burned down. As the locals bicker amongst themselves and tensions boil over, a sinister, grinning figure emerges from the cornfields to cleanse the town of its burdens, one bloody victim at a time. Welcome to Kettle Springs. The real fun starts when Frendo the clown comes out to play.",
+    "director": "Eli Craig",
+    "stars": ["Katie Douglas", "Aaron Abrams", "Carson MacCormac"],
+    "rating_imdb": {
+      "score": 6.2,
+      "votes": 2600
+    },
+    "rating_rt_tomatometer": {
+      "score": 73,
+      "reviews": 124
+    },
+    "rating_rt_popcorn": {
+      "score": 61,
+      "votes": 500
+    }
+  },
+
+  {
+    "title": "Companion",
+    "year": "2025",
+    "length_minutes": 97,
+    "genre": [
+      "Artificial Intelligence",
+      "Dark Comedy",
+      "Psychological Thriller",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "description": "New Line Cinema--the studio that brought you \"The Notebook\"--and the unhinged creators of \"Barbarian\" cordially invite you to experience a new kind of love story....",
+    "director": "Drew Hancock",
+    "stars": ["Sophie Thatcher", "Jack Quaid", "Lukas Gage"],
+    "rating_imdb": {
+      "score": 6.9,
+      "votes": 105000
+    },
+    "rating_rt_tomatometer": {
+      "score": 93,
+      "reviews": 247
+    },
+    "rating_rt_popcorn": {
+      "score": 89,
+      "votes": 1000
+    }
+  },
+
+  {
+    "title": "Conclave",
+    "year": "2024",
+    "length_minutes": 120,
+    "genre": ["Conspiracy Thriller", "Drama", "Thriller"],
+    "description": "CONCLAVE follows one of the world's most secretive and ancient events -- selecting the new Pope. Cardinal Lawrence (Ralph Fiennes) is tasked with running this covert process after the unexpected death of the beloved Pope. Once the Catholic Church’s most powerful leaders have gathered from around the world and are locked together in the Vatican halls, Lawrence uncovers a trail of deep secrets left in the dead Pope’s wake, secrets which could shake the foundations of the Church.",
+    "director": "Edward Berger",
+    "stars": ["Ralph Fiennes", "Stanley Tucci", "John Lithgow"],
+    "rating_imdb": {
+      "score": 7.4,
+      "votes": 187000
+    },
+    "rating_rt_tomatometer": {
+      "score": 93,
+      "reviews": 322
+    },
+    "rating_rt_popcorn": {
+      "score": 86,
+      "votes": 2500
+    }
+  },
+  {
+    "title": "Death of a Unicorn",
+    "year": "2025",
+    "length_minutes": 107,
+    "genre": [
+      "Dark Comedy",
+      "Dark Fantasy",
+      "Monster Horror",
+      "Comedy",
+      "Fantasy",
+      "Horror",
+      "Thriller"
+    ],
+    "description": "A father (Paul Rudd) and daughter (Jenna Ortega) accidentally hit and kill a unicorn while en route to a weekend retreat, where his billionaire boss (Richard E. Grant) seeks to exploit the creature's miraculous curative properties.",
+    "director": "Alex Scharfman",
+    "stars": ["Paul Rudd", "Jenna Ortega", "Will Poulter"],
+    "rating_imdb": {
+      "score": 5.9,
+      "votes": 20000
+    },
+    "rating_rt_tomatometer": {
+      "score": 54,
+      "reviews": 204
+    },
+    "rating_rt_popcorn": {
+      "score": 78,
+      "votes": 1000
+    }
+  },
+
+  {
+    "title": "Disney's Snow White",
+    "year": "2025",
+    "length_minutes": 109,
+    "genre": [
+      "Fairy Tale",
+      "Feel-Good Romance",
+      "Adventure",
+      "Family",
+      "Fantasy",
+      "Musical",
+      "Romance"
+    ],
+    "description": "\"Disney's Snow White,\" a live-action musical reimagining of the classic 1937 film, opens exclusively in theaters March 21, 2025. Starring Rachel Zegler (\"West Side Story\") in the title role and Gal Gadot (\"Wonder Woman\") as her Stepmother, the Evil Queen, the magical music adventure journeys back to the timeless story with beloved characters Bashful, Doc, Dopey, Grumpy, Happy, Sleepy, and Sneezy.",
+    "director": "Marc Webb",
+    "stars": ["Rachel Zegler", "Emilia Faucher", "Gal Gadot"],
+    "rating_imdb": {
+      "score": 1.7,
+      "votes": 357000
+    },
+    "rating_rt_tomatometer": {
+      "score": 39,
+      "reviews": 257
+    },
+    "rating_rt_popcorn": {
+      "score": 71,
+      "votes": 2500
+    }
+  },
+
+  {
+    "title": "Drop",
+    "year": "2025",
+    "length_minutes": 95,
+    "genre": ["Whodunnit", "Drama", "Mystery", "Thriller"],
+    "description": "Emmy nominee Meghann Fahy, breakout star of White Lotus and The Perfect Couple, plays Violet, a widowed mother on her first date in years, who arrives at an upscale restaurant where she is relieved that her date, Henry (It Ends with Us' Brandon Sklenar) is more charming and handsome than she expected. But their chemistry begins to curdle as Violet begins being irritated and then terrorized by a series of anonymous drops to her phone. She is instructed to tell nobody and follow instructions or the hooded figure she sees on her home security cameras will kill Violet's young son and babysitting sister. Violet must do exactly as directed or everyone she loves will die. Her unseen tormentor's final directive? Kill Henry.",
+    "director": "Christopher Landon",
+    "stars": ["Meghann Fahy", "Brandon Sklenar", "Violett Beane"],
+    "rating_imdb": {
+      "score": 6.2,
+      "votes": 21000
+    },
+    "rating_rt_tomatometer": {
+      "score": 84,
+      "reviews": 212
+    },
+    "rating_rt_popcorn": {
+      "score": 79,
+      "votes": 1000
+    }
+  },
+  {
+    "title": "Fight or Flight",
+    "year": "2024",
+    "length_minutes": 102,
+    "genre": ["Martial Arts", "One-Person Army Action", "Action", "Comedy"],
+    "description": "Exiled American agent Lucas Reyes (Josh Hartnett) is given one last chance to redeem himself -- the assignment is to track down and identify a mysterious, international high-value asset known only as The Ghost on a flight from Bangkok to San Francisco. Complicating matters, the plane is filled with assassins from around the world who are assigned to kill them both. The pair must work together in a fight for their lives. At 37,000 feet, the stakes have never been higher.",
+    "director": "James Madigan",
+    "stars": ["Josh Hartnett", "Charithra Chandran", "Katee Sackhoff"],
+    "rating_imdb": {
+      "score": 6.4,
+      "votes": 11000
+    },
+    "rating_rt_tomatometer": {
+      "score": 77,
+      "reviews": 99
+    },
+    "rating_rt_popcorn": {
+      "score": 75,
+      "votes": 500
+    }
+  },
+  {
+    "title": "Final Destination: Bloodlines",
+    "year": "2025",
+    "length_minutes": 110,
+    "genre": ["Splatter Horror", "Supernatural Horror", "Horror"],
+    "description": "The newest chapter in New Line Cinema's bloody successful franchise takes audiences back to the very beginning of Death's twisted sense of justice. Plagued by a violent recurring nightmare, college student Stefanie heads home to track down the one person who might be able to break the cycle and save her family from the grisly demise that inevitably awaits them all.",
+    "director": "Zach Lipovsky and Adam B. Stein",
+    "stars": ["Kaitlyn Santa Juana", "Teo Briones", "Rya Kihlstedt"],
+    "rating_imdb": {
+      "score": 7.1,
+      "votes": 18000
+    },
+    "rating_rt_tomatometer": {
+      "score": 93,
+      "reviews": 131
+    },
+    "rating_rt_popcorn": {
+      "score": 89,
+      "votes": 2500
+    }
+  },
+
+  {
+    "title": "Final Destination",
+    "year": "2000",
+    "length_minutes": 98,
+    "genre": [
+      "Splatter Horror",
+      "Supernatural Horror",
+      "Teen Horror",
+      "Horror",
+      "Thriller"
+    ],
+    "description": "Alex Browning (Devon Sawa), is embarking on a trip to Paris. Alex experiences a premonition -- he sees the plane explode moments after leaving the ground. Alex insists that everyone get off the plane and 7 people including Alex, are forced to disembark. All watch as the plane actually explodes in a fireball. He and the other survivors have briefly cheated death, but will not be able to evade their fate for very long. One by one, these fugitives from fate fall victim to the grim reaper.",
+    "director": "James Wong",
+    "stars": ["Devon Sawa", "Ali Larter", "Kerr Smith"],
+    "rating_imdb": {
+      "score": 6.7,
+      "votes": 304000
+    },
+    "rating_rt_tomatometer": {
+      "score": 41,
+      "reviews": 105
+    },
+    "rating_rt_popcorn": {
+      "score": 68,
+      "votes": 250000
+    }
+  },
+  {
+    "title": "Gladiator",
+    "year": "2000",
+    "length_minutes": 155,
+    "genre": [
+      "Action Epic",
+      "Adventure Epic",
+      "Epic",
+      "Period Drama",
+      "Sword & Sandal",
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "description": "Commodus (Joaquin Phoenix) takes power and strips rank from Maximus (Russell Crowe), one of the favored generals of his predecessor and father, Emperor Marcus Aurelius, the great stoical philosopher. Maximus is then relegated to fighting to the death in the gladiator arenas.",
+    "director": "Ridley Scott",
+    "stars": ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen"],
+    "rating_imdb": {
+      "score": 8.5,
+      "votes": 1800000
+    },
+    "rating_rt_tomatometer": {
+      "score": 80,
+      "reviews": 261
+    },
+    "rating_rt_popcorn": {
+      "score": 87,
+      "votes": 250000
+    }
+  },
+
+  {
+    "title": "Gladiator II",
+    "year": "2024",
+    "length_minutes": 148,
+    "genre": [
+      "Action Epic",
+      "Adventure Epic",
+      "Epic",
+      "Period Drama",
+      "Sword & Sandal",
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "description": "Years after witnessing the death of Maximus at the hands of his uncle, Lucius must enter the Colosseum after the powerful emperors of Rome conquer his home. With rage in his heart and the future of the empire at stake, he looks to the past to find the strength and honor needed to return the glory of Rome to its people.",
+    "director": "Ridley Scott",
+    "stars": ["Paul Mescal", "Denzel Washington", "Pedro Pascal"],
+    "rating_imdb": {
+      "score": 6.5,
+      "votes": 239000
+    },
+    "rating_rt_tomatometer": {
+      "score": 70,
+      "reviews": 394
+    },
+    "rating_rt_popcorn": {
+      "score": 82,
+      "votes": 10000
+    }
+  },
+
+  {
+    "title": "Havoc",
+    "year": "2025",
+    "length_minutes": 107,
+    "genre": [
+      "Conspiracy Thriller",
+      "Drug Crime",
+      "Gun Fu",
+      "Martial Arts",
+      "One-Person Army Action",
+      "Suspense Mystery",
+      "Action",
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "description": "Walker (Tom Hardy) is a bruised detective fighting his way through the criminal underworld threatening to engulf his entire city. In the aftermath of a drug deal gone wrong, Walker finds himself with a number of factions on his tail; a vengeful crime syndicate, a crooked politician, as well as his fellow cops. When attempting to rescue the politician's estranged son, whose involvement in the drug deal starts to unravel a deep web of corruption and conspiracy, he is forced to confront the demons of his past.",
+    "director": "Gareth Evans",
+    "stars": ["Tom Hardy", "Jessie Mei Li", "Justin Cornwell"],
+    "rating_imdb": {
+      "score": 5.7,
+      "votes": 44000
+    },
+    "rating_rt_tomatometer": {
+      "score": 65,
+      "reviews": 101
+    },
+    "rating_rt_popcorn": {
+      "score": 36,
+      "votes": 1000
+    }
+  },
+
+  {
+    "title": "Heart Eyes",
+    "year": "2025",
+    "length_minutes": 97,
+    "genre": [
+      "Dark Comedy",
+      "Slasher Horror",
+      "Splatter Horror",
+      "Whodunnit",
+      "Comedy",
+      "Horror",
+      "Mystery"
+    ],
+    "description": "For the past several years, the \"Heart Eyes Killer\" has wreaked havoc on Valentine's Day by stalking and murdering romantic couples. This Valentine's Day, no couple is safe....",
+    "director": "Josh Ruben",
+    "stars": ["Mason Gooding", "Olivia Holt", "Gigi Zumbado"],
+    "rating_imdb": {
+      "score": 6.1,
+      "votes": 21000
+    },
+    "rating_rt_tomatometer": {
+      "score": 80,
+      "reviews": 162
+    },
+    "rating_rt_popcorn": {
+      "score": 77,
+      "votes": 1000
+    }
+  },
+
+  {
+    "title": "Heretic",
+    "year": "2024",
+    "length_minutes": 111,
+    "genre": [
+      "Psychological Horror",
+      "Psychological Thriller",
+      "Horror",
+      "Thriller"
+    ],
+    "description": "Two young missionaries are forced to prove their faith when they knock on the wrong door and are greeted by a diabolical Mr. Reed (Hugh Grant), becoming ensnared in his deadly game of cat-and-mouse.",
+    "director": "Scott Beck and Bryan Woods",
+    "stars": ["Hugh Grant", "Sophie Thatcher", "Chloe East"],
+    "rating_imdb": {
+      "score": 7.0,
+      "votes": null
+    },
+    "rating_rt_tomatometer": {
+      "score": 91,
+      "reviews": 282
+    },
+    "rating_rt_popcorn": {
+      "score": 76,
+      "votes": 1000
+    }
+  },
+
+  {
+    "title": "Inception",
+    "year": "2010",
+    "length_minutes": 148,
+    "genre": [
+      "Action Epic",
+      "Adventure Epic",
+      "Epic",
+      "Psychological Thriller",
+      "Sci-Fi Epic",
+      "Action",
+      "Adventure",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "description": "Dom Cobb (Leonardo DiCaprio) is a thief with the rare ability to enter people's dreams and steal their secrets from their subconscious. His skill has made him a hot commodity in the world of corporate espionage but has also cost him everything he loves. Cobb gets a chance at redemption when he is offered a seemingly impossible task: Plant an idea in someone's mind. If he succeeds, it will be the perfect crime, but a dangerous enemy anticipates Cobb's every move.",
+    "director": "Christopher Nolan",
+    "stars": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
+    "rating_imdb": {
+      "score": 8.8,
+      "votes": 2700000
+    },
+    "rating_rt_tomatometer": {
+      "score": 87,
+      "reviews": 368
+    },
+    "rating_rt_popcorn": {
+      "score": 91,
+      "votes": 250000
+    }
+  },
+
+  {
+    "title": "Interstellar",
+    "year": "2014",
+    "length_minutes": 169,
+    "genre": [
+      "Adventure Epic",
+      "Epic",
+      "Quest",
+      "Sci-Fi Epic",
+      "Space Sci-Fi",
+      "Time Travel",
+      "Adventure",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "description": "In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Brand (Michael Caine), a brilliant NASA physicist, is working on plans to save mankind by transporting Earth's population to a new home via a wormhole. But first, Brand must send former NASA pilot Cooper (Matthew McConaughey) and a team of researchers through the wormhole and across the galaxy to find out which of three planets could be mankind's new home.",
+    "director": "Christopher Nolan",
+    "stars": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
+    "rating_imdb": {
+      "score": 8.7,
+      "votes": 2300000
+    },
+    "rating_rt_tomatometer": {
+      "score": 73,
+      "reviews": 376
+    },
+    "rating_rt_popcorn": {
+      "score": 87,
+      "votes": 100000
+    }
+  },
+
+  {
+    "title": "Love Hurts",
+    "year": "2025",
+    "length_minutes": 83,
+    "genre": ["Martial Arts", "Romantic Comedy", "Action", "Comedy", "Romance"],
+    "description": "Ke Huy Quan stars as Marvin Gable, a realtor working the Milwaukee suburbs, where 'For Sale' signs bloom. Gable receives a crimson envelope from Rose (Oscar® winner Ariana DeBose; West Side Story, Argylle), a former partner-in-crime that he had left for dead. She’s not happy. Now, Marvin is thrust back into a world of ruthless hitmen, filled with double-crosses and open houses turned into deadly warzones. With his brother Knuckles (Daniel Wu; Tomb Raider, Warcraft), a volatile crime lord, hunting him, Marvin must confront the choices that haunt him and the history he never truly buried.",
+    "director": "Jonathan Eusebio",
+    "stars": ["Ke Huy Quan", "Ariana DeBose", "Mustafa Shakir"],
+    "rating_imdb": {
+      "score": 5.3,
+      "votes": 10000
+    },
+    "rating_rt_tomatometer": {
+      "score": 19,
+      "reviews": 164
+    },
+    "rating_rt_popcorn": {
+      "score": 61,
+      "votes": 1000
+    }
+  },
+
+  {
+    "title": "Mickey 17",
+    "year": "2025",
+    "length_minutes": 137,
+    "genre": [
+      "Alien Invasion",
+      "Dark Comedy",
+      "Space Sci-Fi",
+      "Adventure",
+      "Comedy",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "description": "Mickey 17, known as an \"expendable,\" goes on a dangerous journey to colonize an ice planet.",
+    "director": "Bong Joon Ho",
+    "stars": ["Robert Pattinson", "Steven Yeun", "Michael Monroe"],
+    "rating_imdb": {
+      "score": 6.8,
+      "votes": 123000
+    },
+    "rating_rt_tomatometer": {
+      "score": 77,
+      "reviews": 332
+    },
+    "rating_rt_popcorn": {
+      "score": 73,
+      "votes": 2500
+    }
+  },
+
+  {
+    "title": "Mission: Impossible - Dead Reckoning Part One",
+    "year": null,
+    "length_minutes": null,
+    "genre": [
+      "Action Epic",
+      "Adventure Epic",
+      "Spy",
+      "Action",
+      "Adventure",
+      "Thriller"
+    ],
+    "description": "In Mission: Impossible - Dead Reckoning Part One, Ethan Hunt (Tom Cruise) and his IMF team embark on their most dangerous mission yet: To track down a terrifying new weapon that threatens all of humanity before it falls into the wrong hands. With control of the future and the fate of the world at stake, and dark forces from Ethan's past closing in, a deadly race around the globe begins. Confronted by a mysterious, all-powerful enemy, Ethan is forced to consider that nothing can matter more than his mission -- not even the lives of those he cares about most.",
+    "director": "Christopher McQuarrie",
+    "stars": ["Tom Cruise", "Hayley Atwell", "Ving Rhames"],
+    "rating_imdb": {
+      "score": 7.6,
+      "votes": 288000
+    },
+    "rating_rt_tomatometer": {
+      "score": 96,
+      "reviews": 434
+    },
+    "rating_rt_popcorn": {
+      "score": 94,
+      "votes": 5000
+    }
+  },
+
+  {
+    "title": "Nonnas",
+    "year": "2025",
+    "length_minutes": 111,
+    "genre": ["Comedy"],
+    "description": "After the loss of his mother, a man risks everything to honor her by opening an Italian restaurant with a group of local grandmothers as the chefs.",
+    "director": "Stephen Chbosky",
+    "stars": ["Vince Vaughn", "Lorraine Bracco", "Talia Shire"],
+    "rating_imdb": {
+      "score": 7.0,
+      "votes": 14000
+    },
+    "rating_rt_tomatometer": {
+      "score": 80,
+      "reviews": 51
+    },
+    "rating_rt_popcorn": {
+      "score": 76,
+      "votes": 250
+    }
+  },
+
+  {
+    "title": "Nosferatu",
+    "year": "2024",
+    "length_minutes": 132,
+    "genre": [
+      "Dark Fantasy",
+      "Supernatural Horror",
+      "Vampire Horror",
+      "Fantasy",
+      "Horror",
+      "Mystery"
+    ],
+    "description": "Robert Eggers' NOSFERATU is a gothic tale of obsession between a haunted young woman and the terrifying vampire infatuated with her, causing untold horror in its wake.",
+    "director": "Robert Eggers",
+    "stars": ["Lily-Rose Depp", "Nicholas Hoult", "Bill Skarsgård"],
+    "rating_imdb": {
+      "score": 7.2,
+      "votes": 201000
+    },
+    "rating_rt_tomatometer": {
+      "score": 84,
+      "reviews": 358
+    },
+    "rating_rt_popcorn": {
+      "score": 73,
+      "votes": 5000
+    }
+  },
+
+  {
+    "title": "Novocaine",
+    "year": "2025",
+    "length_minutes": 110,
+    "genre": [
+      "Dark Comedy",
+      "One-Person Army Action",
+      "Superhero",
+      "Action",
+      "Comedy",
+      "Thriller"
+    ],
+    "description": "When the girl of his dreams (Amber Midthunder) is kidnapped, everyman Nate (Jack Quaid) turns his inability to feel pain into an unexpected strength in his fight to get her back.",
+    "director": "Dan Berk and Robert Olsen",
+    "stars": ["Jack Quaid", "Amber Midthunder", "Ray Nicholson"],
+    "rating_imdb": {
+      "score": 6.5,
+      "votes": 42000
+    },
+    "rating_rt_tomatometer": {
+      "score": 81,
+      "reviews": 202
+    },
+    "rating_rt_popcorn": {
+      "score": 85,
+      "votes": 1000
+    }
+  },
+
+  {
+    "title": "Now You See Me",
+    "year": "2013",
+    "length_minutes": 115,
+    "genre": ["Caper", "Heist", "Crime", "Mystery", "Thriller"],
+    "description": "Charismatic magician Atlas (Jesse Eisenberg) leads a team of talented illusionists called the Four Horsemen. Atlas and his comrades mesmerize audiences with a pair of amazing magic shows that drain the bank accounts of the corrupt and funnel the money to audience members. A federal agent (Mark Ruffalo) and an Interpol detective (Mélanie Laurent) intend to rein in the Horsemen before their next caper, and they turn to Thaddeus (Morgan Freeman), a famous debunker, for help.",
+    "director": "Louis Leterrier",
+    "stars": ["Jesse Eisenberg", "Common", "Mark Ruffalo"],
+    "rating_imdb": {
+      "score": 7.2,
+      "votes": 738000
+    },
+    "rating_rt_tomatometer": {
+      "score": 51,
+      "reviews": 171
+    },
+    "rating_rt_popcorn": {
+      "score": 70,
+      "votes": 100000
+    }
+  },
+  {
+    "title": "Once Upon a Time... in Hollywood",
+    "year": "2019",
+    "length_minutes": 161,
+    "genre": ["Period Drama", "Showbiz Drama", "Comedy", "Drama"],
+    "description": "Actor Rick Dalton gained fame and fortune by starring in a 1950s television Western, but is now struggling to find meaningful work in a Hollywood that he doesn't recognize anymore. He spends most of his time drinking and palling around with Cliff Booth, his easygoing best friend and longtime stunt double. Rick also happens to live next door to Roman Polanski and Sharon Tate -- the filmmaker and budding actress whose futures will forever be altered by members of the Manson Family.",
+    "director": "Quentin Tarantino",
+    "stars": ["Leonardo DiCaprio", "Brad Pitt", "Margot Robbie"],
+    "rating_imdb": {
+      "score": 7.6,
+      "votes": 910000
+    },
+    "rating_rt_tomatometer": {
+      "score": 86,
+      "reviews": 580
+    },
+    "rating_rt_popcorn": {
+      "score": 70,
+      "votes": 25000
+    }
+  },
+
+  {
+    "title": "Oppenheimer",
+    "year": "2023",
+    "length_minutes": 180,
+    "genre": [
+      "Docudrama",
+      "Epic",
+      "Historical Epic",
+      "Period Drama",
+      "Psychological Drama",
+      "Biography",
+      "Drama",
+      "History"
+    ],
+    "description": "During World War II, Lt. Gen. Leslie Groves Jr. appoints physicist J. Robert Oppenheimer to work on the top-secret Manhattan Project. Oppenheimer and a team of scientists spend years developing and designing the atomic bomb. Their work comes to fruition on July 16, 1945, as they witness the world's first nuclear explosion, forever changing the course of history.",
+    "director": "Christopher Nolan",
+    "stars": ["Cillian Murphy", "Emily Blunt", "Matt Damon"],
+    "rating_imdb": {
+      "score": 8.3,
+      "votes": 892000
+    },
+    "rating_rt_tomatometer": {
+      "score": 93,
+      "reviews": 509
+    },
+    "rating_rt_popcorn": {
+      "score": 91,
+      "votes": 10000
+    }
+  },
+
+  {
+    "title": "Pride & Prejudice",
+    "year": "2005",
+    "length_minutes": 129,
+    "genre": [
+      "Costume Drama",
+      "Feel-Good Romance",
+      "Period Drama",
+      "Romantic Epic",
+      "Drama",
+      "Romance"
+    ],
+    "description": "In this adaptation of Jane Austen's beloved novel, Elizabeth Bennet (Keira Knightley) lives with her mother, father and sisters in the English countryside. As the eldest, she faces mounting pressure from her parents to marry. When the outspoken Elizabeth is introduced to the handsome and upper-class Mr. Darcy (Matthew Macfadyen), sparks fly. Although there is obvious chemistry between the two, Darcy's overly reserved nature threatens the fledgling relationship.",
+    "director": "Joe Wright",
+    "stars": ["Keira Knightley", "Matthew Macfadyen", "Brenda Blethyn"],
+    "rating_imdb": {
+      "score": 7.8,
+      "votes": 354000
+    },
+    "rating_rt_tomatometer": {
+      "score": 87,
+      "reviews": 185
+    },
+    "rating_rt_popcorn": {
+      "score": 89,
+      "votes": 250000
+    }
+  },
+
+  {
+    "title": "Rogue One",
+    "year": "2016",
+    "length_minutes": 133,
+    "genre": [
+      "Action Epic",
+      "Adventure Epic",
+      "Sci-Fi Epic",
+      "Space Sci-Fi",
+      "Tragedy",
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "description": "Former scientist Galen Erso lives on a farm with his wife and young daughter, Jyn. His peaceful existence comes crashing down when the evil Orson Krennic takes him away from his beloved family. Many years later, Galen becomes the Empire's lead engineer for the most powerful weapon in the galaxy, the Death Star. Knowing that her father holds the key to its destruction, Jyn joins forces with a spy and other resistance fighters to steal the space station's plans for the Rebel Alliance.",
+    "director": "Gareth Edwards",
+    "stars": ["Felicity Jones", "Diego Luna", "Alan Tudyk"],
+    "rating_imdb": {
+      "score": 7.8,
+      "votes": 719000
+    },
+    "rating_rt_tomatometer": {
+      "score": 84,
+      "reviews": 460
+    },
+    "rating_rt_popcorn": {
+      "score": 87,
+      "votes": 100000
+    }
+  },
+
+  {
+    "title": "Sinners",
+    "year": "2025",
+    "length_minutes": 137,
+    "genre": [
+      "Period Drama",
+      "Supernatural Horror",
+      "Vampire Horror",
+      "Action",
+      "Drama",
+      "Horror",
+      "Thriller"
+    ],
+    "description": "Trying to leave their troubled lives behind, twin brothers (Michael B. Jordan) return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
+    "director": "Ryan Coogler",
+    "stars": ["Michael B. Jordan", "Miles Caton", "Saul Williams"],
+    "rating_imdb": {
+      "score": 8.1,
+      "votes": 99000
+    },
+    "rating_rt_tomatometer": {
+      "score": 97,
+      "reviews": 361
+    },
+    "rating_rt_popcorn": {
+      "score": 96,
+      "votes": 25000
+    }
+  },
+  {
+    "title": "Speak No Evil",
+    "year": "2024",
+    "length_minutes": 110,
+    "genre": [
+      "Psychological Drama",
+      "Psychological Horror",
+      "Psychological Thriller",
+      "Drama",
+      "Horror",
+      "Thriller"
+    ],
+    "description": "When an American family is invited to spend the weekend at the idyllic country estate of a charming British family they befriended on vacation, what begins as a dream holiday soon warps into a snarled psychological nightmare.",
+    "director": "James Watkins",
+    "stars": ["James McAvoy", "Mackenzie Davis", "Scoot McNairy"],
+    "rating_imdb": {
+      "score": 6.8,
+      "votes": 104000
+    },
+    "rating_rt_tomatometer": {
+      "score": 83,
+      "reviews": 206
+    },
+    "rating_rt_popcorn": {
+      "score": 83,
+      "votes": 2500
+    }
+  },
+
+  {
+    "title": "Star Wars: Episode I - The Phantom Menace",
+    "year": "1999",
+    "length_minutes": 136,
+    "genre": [
+      "Action Epic",
+      "Adventure Epic",
+      "Fantasy Epic",
+      "Quest",
+      "Sci-Fi Epic",
+      "Space Sci-Fi",
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "description": "Experience the heroic action and unforgettable adventures of Star Wars: Episode I - The Phantom Menace. See the first fateful steps in the journey of Anakin Skywalker. Stranded on the desert planet Tatooine after rescuing young Queen Amidala from the impending invasion of Naboo, Jedi apprentice Obi-Wan Kenobi and his Jedi Master Qui-Gon Jinn discover nine-year-old Anakin, who is unusually strong in the Force. Anakin wins a thrilling Podrace and with it his freedom as he leaves his home to be trained as a Jedi. The heroes return to Naboo where Anakin and the Queen face massive invasion forces while the two Jedi contend with a deadly foe named Darth Maul. Only then do they realize the invasion is merely the first step in a sinister scheme by the re-emergent forces of darkness known as the Sith.",
+    "director": "George Lucas",
+    "stars": ["Ewan McGregor", "Liam Neeson", "Natalie Portman"],
+    "rating_imdb": {
+      "score": 6.5,
+      "votes": 892000
+    },
+    "rating_rt_tomatometer": {
+      "score": 54,
+      "reviews": 289
+    },
+    "rating_rt_popcorn": {
+      "score": 59,
+      "votes": 250000
+    }
+  },
+
+  {
+    "title": "Star Wars: Episode II - Attack of the Clones",
+    "year": "2002",
+    "length_minutes": 142,
+    "genre": [
+      "Action Epic",
+      "Adventure Epic",
+      "Fantasy Epic",
+      "Sci-Fi Epic",
+      "Space Sci-Fi",
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "description": "Set ten years after the events of \"The Phantom Menace,\" the Republic continues to be mired in strife and chaos. A separatist movement encompassing hundreds of planets and powerful corporate alliances poses new threats to the galaxy that even the Jedi cannot stem. These moves, long planned by an as yet unrevealed and powerful force, lead to the beginning of the Clone Wars -- and the beginning of the end of the Republic.",
+    "director": "George Lucas",
+    "stars": ["Hayden Christensen", "Natalie Portman", "Ewan McGregor"],
+    "rating_imdb": {
+      "score": 6.6,
+      "votes": 790000
+    },
+    "rating_rt_tomatometer": {
+      "score": 61,
+      "reviews": 319
+    },
+    "rating_rt_popcorn": {
+      "score": 56,
+      "votes": 250000
+    }
+  },
+
+  {
+    "title": "Star Wars: Episode III - Revenge of the Sith",
+    "year": "2005",
+    "length_minutes": 140,
+    "genre": [
+      "Action Epic",
+      "Adventure Epic",
+      "Dark Fantasy",
+      "Epic",
+      "Fantasy Epic",
+      "Sci-Fi Epic",
+      "Space Sci-Fi",
+      "Tragedy",
+      "Action",
+      "Adventure"
+    ],
+    "description": "It has been three years since the Clone Wars began. Jedi Master Obi-Wan Kenobi (Ewan McGregor) and Jedi Knight Anakin Skywalker (Hayden Christensen) rescue Chancellor Palpatine (Ian McDiarmid) from General Grievous, the commander of the droid armies, but Grievous escapes. Suspicions are raised within the Jedi Council concerning Chancellor Palpatine, with whom Anakin has formed a bond. Asked to spy on the chancellor, and full of bitterness toward the Jedi Council, Anakin embraces the Dark Side.",
+    "director": "George Lucas",
+    "stars": ["Hayden Christensen", "Natalie Portman", "Ewan McGregor"],
+    "rating_imdb": {
+      "score": 7.6,
+      "votes": 885000
+    },
+    "rating_rt_tomatometer": {
+      "score": 79,
+      "reviews": 333
+    },
+    "rating_rt_popcorn": {
+      "score": 66,
+      "votes": 250000
+    }
+  },
+
+  {
+    "title": "Star Wars: Episode IV - A New Hope",
+    "year": "1977",
+    "length_minutes": 121,
+    "genre": [
+      "Action Epic",
+      "Adventure Epic",
+      "Dystopian Sci-Fi",
+      "Epic",
+      "Fantasy Epic",
+      "Quest",
+      "Sci-Fi Epic",
+      "Space Sci-Fi",
+      "Sword & Sorcery",
+      "Action"
+    ],
+    "description": "The Imperial Forces -- under orders from cruel Darth Vader (David Prowse) -- hold Princess Leia (Carrie Fisher) hostage, in their efforts to quell the rebellion against the Galactic Empire. Luke Skywalker (Mark Hamill) and Han Solo (Harrison Ford), captain of the Millennium Falcon, work together with the companionable droid duo R2-D2 (Kenny Baker) and C-3PO (Anthony Daniels) to rescue the beautiful princess, help the Rebel Alliance, and restore freedom and justice to the Galaxy.",
+    "director": "George Lucas",
+    "stars": ["Mark Hamill", "Harrison Ford", "Carrie Fisher"],
+    "rating_imdb": {
+      "score": 8.6,
+      "votes": 1500000
+    },
+    "rating_rt_tomatometer": {
+      "score": 94,
+      "reviews": 206
+    },
+    "rating_rt_popcorn": {
+      "score": 96,
+      "votes": 250000
+    }
+  },
+
+  {
+    "title": "Star Wars: Episode VI - Return of the Jedi",
+    "year": "1983",
+    "length_minutes": 131,
+    "genre": [
+      "Action Epic",
+      "Adventure Epic",
+      "Dark Fantasy",
+      "Dystopian Sci-Fi",
+      "Epic",
+      "Fantasy Epic",
+      "Globetrotting Adventure",
+      "Quest",
+      "Sci-Fi Epic",
+      "Space Sci-Fi"
+    ],
+    "description": "Luke Skywalker (Mark Hamill) battles horrible Jabba the Hut and cruel Darth Vader to save his comrades in the Rebel Alliance and triumph over the Galactic Empire. Han Solo (Harrison Ford) and Princess Leia (Carrie Fisher) reaffirm their love and team with Chewbacca, Lando Calrissian (Billy Dee Williams), the Ewoks and the androids C-3PO and R2-D2 to aid in the disruption of the Dark Side and the defeat of the evil emperor.",
+    "director": "Richard Marquand",
+    "stars": ["Mark Hamill", "Harrison Ford", "Carrie Fisher"],
+    "rating_imdb": {
+      "score": 8.3,
+      "votes": 1200000
+    },
+    "rating_rt_tomatometer": {
+      "score": 83,
+      "reviews": 169
+    },
+    "rating_rt_popcorn": {
+      "score": 94,
+      "votes": 250000
+    }
+  },
+
+  {
+    "title": "The Accountant",
+    "year": "2016",
+    "length_minutes": 128,
+    "genre": [
+      "Conspiracy Thriller",
+      "Martial Arts",
+      "One-Person Army Action",
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "description": "Christian Wolff (Ben Affleck) is a mathematics savant with more affinity for numbers than people. Using a small-town CPA office as a cover, he makes his living as a freelance accountant for dangerous criminal organizations. With a Treasury agent (J.K. Simmons) hot on his heels, Christian takes on a state-of-the-art robotics company as a legitimate client. As Wolff gets closer to the truth about a discrepancy that involves millions of dollars, the body count starts to rise.",
+    "director": "Gavin O'Connor",
+    "stars": ["Ben Affleck", "Anna Kendrick", "J.K. Simmons"],
+    "rating_imdb": {
+      "score": 7.3,
+      "votes": 357000
+    },
+    "rating_rt_tomatometer": {
+      "score": 53,
+      "reviews": 286
+    },
+    "rating_rt_popcorn": {
+      "score": 77,
+      "votes": 25000
+    }
+  },
+
+  {
+    "title": "The Accountant 2",
+    "year": "2025",
+    "length_minutes": 132,
+    "genre": ["Whodunnit", "Action", "Crime", "Drama", "Mystery", "Thriller"],
+    "description": "Christian Wolff (Ben Affleck) has a talent for solving complex problems. When an old acquaintance is murdered, leaving behind a cryptic message to 'find the accountant,' Wolff is compelled to solve the case. Realizing more extreme measures are necessary, Wolff recruits his estranged and highly lethal brother, Brax (Jon Bernthal), to help. In partnership with U.S. Treasury Deputy Director Marybeth Medina (Cynthia Addai-Robinson), they uncover a deadly conspiracy, becoming targets of a ruthless network of killers who will stop at nothing to keep their secrets buried.",
+    "director": "Gavin O'Connor",
+    "stars": ["Ben Affleck", "Jon Bernthal", "Cynthia Addai-Robinson"],
+    "rating_imdb": {
+      "score": 7.1,
+      "votes": 23000
+    },
+    "rating_rt_tomatometer": {
+      "score": 76,
+      "reviews": 194
+    },
+    "rating_rt_popcorn": {
+      "score": 92,
+      "votes": 5000
+    }
+  },
+
+  {
+    "title": "The Amateur",
+    "year": "2025",
+    "length_minutes": 122,
+    "genre": ["Spy", "Action", "Thriller"],
+    "description": "Charlie Heller (Rami Malek) is a brilliant, but deeply introverted decoder for the CIA working out of a basement office at headquarters in Langley whose life is turned upside down when his wife is killed in a London terrorist attack. When his supervisors refuse to take action, he takes matters into his own hands, embarking on a dangerous trek across the globe to track down those responsible, his intelligence serving as the ultimate weapon for eluding his pursuers and achieving his revenge.",
+    "director": "James Hawes",
+    "stars": ["Rami Malek", "Rachel Brosnahan", "Jon Bernthal"],
+    "rating_imdb": {
+      "score": 6.7,
+      "votes": 20000
+    },
+    "rating_rt_tomatometer": {
+      "score": 60,
+      "reviews": 177
+    },
+    "rating_rt_popcorn": {
+      "score": 88,
+      "votes": 2500
+    }
+  },
+
+  {
+    "title": "The Dark Knight",
+    "year": "2008",
+    "length_minutes": 152,
+    "genre": [
+      "Action Epic",
+      "Epic",
+      "Superhero",
+      "Tragedy",
+      "Action",
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "description": "With the help of allies Lt. Jim Gordon (Gary Oldman) and DA Harvey Dent (Aaron Eckhart), Batman (Christian Bale) has been able to keep a tight lid on crime in Gotham City. But when a vile young criminal calling himself the Joker (Heath Ledger) suddenly throws the town into chaos, the caped Crusader begins to tread a fine line between heroism and vigilantism.",
+    "director": "Christopher Nolan",
+    "stars": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
+    "rating_imdb": {
+      "score": 9.0,
+      "votes": 3000000
+    },
+    "rating_rt_tomatometer": {
+      "score": 94,
+      "reviews": 343
+    },
+    "rating_rt_popcorn": {
+      "score": 94,
+      "votes": 250000
+    }
+  },
+  {
+    "title": "The Electric State",
+    "year": "2025",
+    "length_minutes": 125,
+    "genre": [
+      "Action Epic",
+      "Adventure Epic",
+      "Artificial Intelligence",
+      "Dystopian Sci-Fi",
+      "Epic",
+      "Quest",
+      "Sci-Fi Epic",
+      "Urban Adventure",
+      "Action",
+      "Adventure"
+    ],
+    "description": "The Electric State is a spectacular adventure set in an alternate, retro-futuristic version of the 1990s. Millie Bobby Brown stars as Michelle, an orphaned teen navigating life in a society where sentient robots now live in exile. When a robot named Cosmo brings news of her presumed-dead brother, Michelle embarks on a journey across the American southwest with Cosmo, a smuggler named Keats, and a robot sidekick. Their mission leads them to the Exclusion Zone where hidden truths and sinister forces await.",
+    "director": ["Anthony Russo", "Joe Russo"],
+    "stars": ["Chris Pratt", "Millie Bobby Brown", "Woody Harrelson"],
+    "rating_imdb": {
+      "score": 5.9,
+      "votes": 66000
+    },
+    "rating_rt_tomatometer": {
+      "score": 14,
+      "reviews": 145
+    },
+    "rating_rt_popcorn": {
+      "score": 68,
+      "votes": 5000
+    }
+  },
+  {
+    "title": "The Godfather",
+    "year": "1972",
+    "length_minutes": 175,
+    "genre": ["Epic", "Gangster", "Tragedy", "Crime", "Drama"],
+    "description": "Widely regarded as one of the greatest films of all time, this mob drama, based on Mario Puzo's novel, follows the powerful Italian-American crime family of Don Vito Corleone. When his son Michael reluctantly joins the Mafia, he is drawn into a cycle of violence and betrayal, struggling to balance his criminal life and relationship with his wife, Kay.",
+    "director": ["Francis Ford Coppola"],
+    "writers": ["Mario Puzo", "Francis Ford Coppola"],
+    "stars": ["Marlon Brando", "Al Pacino", "James Caan"],
+    "rating_imdb": {
+      "score": 9.2,
+      "votes": 2100000
+    },
+    "rating_rt_tomatometer": {
+      "score": 97,
+      "reviews": 153
+    },
+    "rating_rt_popcorn": {
+      "score": 98,
+      "votes": 250000
+    }
+  },
+
+  {
+    "title": "The Gorge",
+    "year": "2025",
+    "length_minutes": 127,
+    "genre": [
+      "Dark Romance",
+      "Monster Horror",
+      "Survival",
+      "Action",
+      "Adventure",
+      "Horror",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "description": "Two highly-trained operatives are stationed on opposite sides of a vast, classified gorge, guarding humanity from a mysterious evil. As they bond across the divide, they uncover a cataclysmic threat that forces them to join forces and protect a deadly secret hidden within the gorge.",
+    "director": ["Scott Derrickson"],
+    "writers": ["Zach Dean"],
+    "stars": ["Miles Teller", "Anya Taylor-Joy", "Sigourney Weaver"],
+    "rating_imdb": {
+      "score": 6.7,
+      "votes": 121000
+    },
+    "rating_rt_tomatometer": {
+      "score": 63,
+      "reviews": 143
+    },
+    "rating_rt_popcorn": {
+      "score": 75,
+      "votes": 2500
+    }
+  },
+
+  {
+    "title": "The Monkey",
+    "year": "2025",
+    "length_minutes": 98,
+    "genre": ["Dark Comedy", "Splatter Horror", "Horror"],
+    "description": "When twin brothers find a mysterious wind-up monkey, a series of outrageous deaths tears their family apart. Twenty-five years later, the monkey begins a new killing spree, forcing the estranged siblings to confront the cursed toy.",
+    "director": ["Osgood Perkins"],
+    "writers": ["Osgood Perkins", "Stephen King"],
+    "stars": ["Theo James", "Tatiana Maslany", "Christian Convery"],
+    "rating_imdb": {
+      "score": 6.0,
+      "votes": 46000
+    },
+    "rating_rt_tomatometer": {
+      "score": 78,
+      "reviews": 276
+    },
+    "rating_rt_popcorn": {
+      "score": 56,
+      "votes": 2500
+    }
+  },
+  {
+    "title": "The Old Guard",
+    "year": "2020",
+    "length_minutes": 125,
+    "genre": ["Globetrotting Adventure", "Superhero", "Action", "Thriller"],
+    "description": "A group of mercenaries, all centuries-old immortals with the ability to heal themselves, discover someone is onto their secret, and they must fight to protect their freedom.",
+    "director": ["Gina Prince-Bythewood"],
+    "writers": ["Greg Rucka", "Leandro Fernandez"],
+    "stars": ["Charlize Theron", "KiKi Layne", "Matthias Schoenaerts"],
+    "rating_imdb": {
+      "score": 6.7,
+      "votes": 193000
+    },
+    "rating_rt_tomatometer": {
+      "score": 80,
+      "reviews": 286
+    },
+    "rating_rt_popcorn": {
+      "score": 70,
+      "votes": 2500
+    }
+  },
+
+  {
+    "title": "The Order",
+    "year": "2024",
+    "length_minutes": 116,
+    "genre": ["Heist", "True Crime", "Crime", "Drama", "Thriller"],
+    "description": "For over a year, a series of bold daylight bank robberies and armored car heists leaves law enforcement baffled and the public panicked throughout the Pacific Northwest. As the attacks become increasingly violent, FBI agent Terry Husk (Jude Law) becomes convinced that the robberies are the work of a domestic terrorist gang planning to use the loot to finance an armed uprising against the U.S. government.",
+    "director": ["Justin Kurzel"],
+    "writers": ["Zach Baylin", "Kevin Flynn", "Gary Gerhardt"],
+    "stars": ["Jude Law", "Nicholas Hoult", "Tye Sheridan"],
+    "rating_imdb": {
+      "score": 6.8,
+      "votes": 47000
+    },
+    "rating_rt_tomatometer": {
+      "score": 92,
+      "reviews": 159
+    },
+    "rating_rt_popcorn": {
+      "score": 89,
+      "votes": 250
+    }
+  },
+
+  {
+    "title": "The Substance",
+    "year": "2024",
+    "length_minutes": 141,
+    "genre": [
+      "Body Horror",
+      "Dark Comedy",
+      "Monster Horror",
+      "Psychological Horror",
+      "Showbiz Drama",
+      "Drama",
+      "Horror",
+      "Sci-Fi"
+    ],
+    "description": "Have you ever dreamt of a better version of yourself? With The Substance, you can generate another you: younger, more beautiful, more perfect. You just have to share time — one week for one, one week for the other. A perfect balance... Easy, right? If you respect the balance. What could possibly go wrong?",
+    "director": ["Coralie Fargeat"],
+    "writers": ["Coralie Fargeat"],
+    "stars": ["Demi Moore", "Margaret Qualley", "Dennis Quaid"],
+    "rating_imdb": {
+      "score": 7.2,
+      "votes": 307000
+    },
+    "rating_rt_tomatometer": {
+      "score": 89,
+      "reviews": 364
+    },
+    "rating_rt_popcorn": {
+      "score": 75,
+      "votes": 1000
+    }
+  },
+
+  {
     "title": "Thunderbolts*",
     "year": "2025",
     "length_minutes": 127,
@@ -29,75 +1588,253 @@
       "votes": 10000
     }
   },
+
   {
-    "title": "Sinners",
-    "year": "2025",
-    "length_minutes": 137,
+    "title": "Twilight",
+    "year": "2008",
+    "length_minutes": 122,
     "genre": [
-      "Period Drama",
-      "Supernatural Horror",
-      "Vampire Horror",
-      "Action",
+      "Dark Fantasy",
+      "Teen Drama",
+      "Teen Fantasy",
+      "Teen Romance",
       "Drama",
-      "Horror",
-      "Thriller"
+      "Fantasy",
+      "Romance"
     ],
-    "description": "Trying to leave their troubled lives behind, twin brothers (Michael B. Jordan) return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
-    "director": "Ryan Coogler",
-    "stars": ["Michael B. Jordan", "Miles Caton", "Saul Williams"],
+    "description": "High-school student Bella Swan, always a bit of a misfit, doesn't expect life to change much when she moves from sunny Arizona to rainy Washington. Then she meets Edward Cullen, a mysterious teen who is secretly a vampire. Far from being frightened, Bella enters a dangerous romance with her immortal soulmate.",
+    "director": ["Catherine Hardwicke"],
+    "writers": ["Melissa Rosenberg", "Stephenie Meyer"],
+    "stars": ["Kristen Stewart", "Robert Pattinson", "Billy Burke"],
     "rating_imdb": {
-      "score": 8.1,
-      "votes": 97000
+      "score": 5.3,
+      "votes": 507000
     },
     "rating_rt_tomatometer": {
-      "score": 97,
-      "reviews": 361
+      "score": 48,
+      "reviews": 223
     },
     "rating_rt_popcorn": {
-      "score": 96,
-      "votes": 25000
+      "score": 72,
+      "votes": 250000
     }
   },
+
   {
-    "title": "Nonnas",
+    "title": "Until Dawn",
     "year": "2025",
-    "length_minutes": 111,
-    "genre": ["Comedy"],
-    "description": "After the loss of his mother, a man risks everything to honor her by opening an Italian restaurant with a group of local grandmothers as the chefs.",
-    "director": "Stephen Chbosky",
-    "stars": ["Vince Vaughn", "Lorraine Bracco", "Talia Shire"],
+    "length_minutes": 103,
+    "genre": [
+      "Psychological Drama",
+      "Psychological Horror",
+      "Slasher Horror",
+      "Splatter Horror",
+      "Supernatural Horror",
+      "Zombie Horror",
+      "Drama",
+      "Horror"
+    ],
+    "description": "One year after her sister Melanie disappeared, Clover and her friends venture into the remote valley where she vanished. They’re stalked by a masked killer and murdered one by one—only to awaken and relive the same night. As they repeat the cycle, with each killer more terrifying than the last, the group must find a way to survive until dawn.",
+    "director": ["David F. Sandberg"],
+    "writers": ["Blair Butler", "Gary Dauberman"],
+    "stars": ["Ella Rubin", "Michael Cimino", "Odessa A'zion"],
     "rating_imdb": {
-      "score": 7.0,
-      "votes": 14000
+      "score": 6.0,
+      "votes": 12000
     },
     "rating_rt_tomatometer": {
-      "score": 80,
-      "reviews": 51
+      "score": 53,
+      "reviews": 102
     },
     "rating_rt_popcorn": {
-      "score": 76,
-      "votes": 250
+      "score": 68,
+      "votes": 1000
     }
   },
   {
-    "title": "Conclave",
-    "year": "2024",
-    "length_minutes": 120,
-    "genre": ["Conspiracy Thriller", "Drama", "Thriller"],
-    "description": "CONCLAVE follows one of the world's most secretive and ancient events -- selecting the new Pope. Cardinal Lawrence (Ralph Fiennes) is tasked with running this covert process after the unexpected death of the beloved Pope. Once the Catholic Church’s most powerful leaders have gathered from around the world and are locked together in the Vatican halls, Lawrence uncovers a trail of deep secrets left in the dead Pope’s wake, secrets which could shake the foundations of the Church.",
-    "director": "Edward Berger",
-    "stars": ["Ralph Fiennes", "Stanley Tucci", "John Lithgow"],
+    "title": "Warfare",
+    "year": "2025",
+    "length_minutes": 95,
+    "genre": ["Docudrama", "War Epic", "Action", "Drama", "War"],
+    "description": "Written and directed by Iraq War veteran Ray Mendoza and Alex Garland, Warfare embeds audiences with a platoon of American Navy SEALs on a surveillance mission gone wrong in insurgent territory. A visceral, real-time story of modern warfare and brotherhood, based on the memories of those who lived it.",
+    "director": ["Alex Garland", "Ray Mendoza"],
+    "writers": ["Ray Mendoza", "Alex Garland"],
+    "stars": ["D'Pharaoh Woon-A-Tai", "Will Poulter", "Cosmo Jarvis"],
     "rating_imdb": {
       "score": 7.4,
-      "votes": 187000
+      "votes": 36000
     },
     "rating_rt_tomatometer": {
       "score": 93,
-      "reviews": 322
+      "reviews": 219
     },
     "rating_rt_popcorn": {
-      "score": 86,
+      "score": 93,
       "votes": 2500
+    }
+  },
+
+  {
+    "title": "Wicked",
+    "original_title": "Wicked: Part I",
+    "year": "2024",
+    "length_minutes": 160,
+    "rating_age": "PG",
+    "genre": ["Fairy Tale", "Pop Musical", "Fantasy", "Musical", "Romance"],
+    "description": "Wicked, the untold story of the witches of Oz, follows Elphaba, a misunderstood young woman with green skin, and Glinda, a privileged and ambitious student at Shiz University. As they forge a deep friendship, a fateful encounter with the Wizard of Oz alters their paths forever, setting them on journeys to become the Wicked Witch of the West and Glinda the Good.",
+    "director": ["Jon M. Chu"],
+    "writers": ["Winnie Holzman", "Dana Fox", "Gregory Maguire"],
+    "stars": ["Cynthia Erivo", "Ariana Grande", "Jeff Goldblum"],
+    "rating_imdb": {
+      "score": 7.5,
+      "votes": 162000
+    },
+    "rating_rt_tomatometer": {
+      "score": 87,
+      "reviews": 391
+    },
+    "rating_rt_popcorn": {
+      "score": 95,
+      "votes": 25000
+    }
+  },
+
+  {
+    "title": "Transformers: Revenge of the Fallen",
+    "year": "2009",
+    "length_minutes": 149,
+    "rating_age": "12A",
+    "genre": [
+      "Alien Invasion",
+      "Car Action",
+      "Desert Adventure",
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "description": "Two years after saving Earth from the Decepticons, Sam Witwicky faces a new challenge at college while Optimus Prime and the Autobots collaborate with a secret military organization. When an ancient Decepticon named The Fallen emerges, Sam and Mikaela must uncover the history of the Transformers on Earth and stop a new threat.",
+    "director": ["Michael Bay"],
+    "writers": ["Ehren Kruger", "Roberto Orci", "Alex Kurtzman"],
+    "stars": ["Shia LaBeouf", "Megan Fox", "Josh Duhamel"],
+    "rating_imdb": {
+      "score": 6.0,
+      "votes": 442000
+    },
+    "rating_rt_tomatometer": {
+      "score": 19,
+      "reviews": 248
+    },
+    "rating_rt_popcorn": {
+      "score": 57,
+      "votes": 250000
+    }
+  },
+
+  {
+    "title": "Transformers",
+    "year": "2007",
+    "length_minutes": 144,
+    "rating_age": "12A",
+    "genre": [
+      "Action Epic",
+      "Alien Invasion",
+      "Sci-Fi Epic",
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "description": "An ancient struggle between two Cybertronian races, the heroic Autobots and the evil Decepticons, comes to Earth, with a clue to the ultimate power held by a teenager.",
+    "director": ["Michael Bay"],
+    "writers": ["Roberto Orci", "Alex Kurtzman", "John Rogers"],
+    "stars": ["Shia LaBeouf", "Megan Fox", "Josh Duhamel"],
+    "rating_imdb": {
+      "score": 7.1,
+      "votes": 697000
+    },
+    "rating_rt_tomatometer": {
+      "score": 57,
+      "reviews": 227
+    },
+    "rating_rt_popcorn": {
+      "score": 85,
+      "votes": 250000
+    }
+  },
+  {
+    "title": "Transformers: Rise of the Beasts",
+    "year": "2023",
+    "length_minutes": 127,
+    "rating_age": "12A",
+    "genre": ["Alien Invasion", "Car Action", "Action", "Adventure", "Sci-Fi"],
+    "description": "Returning to the action and spectacle that have captured moviegoers around the world, Transformers: Rise of the Beasts will take audiences on a '90s globetrotting adventure with the Autobots and introduce a whole new faction of Transformer -- the Maximals -- to the existing battle on earth between Autobots and Decepticons.",
+    "director": ["Steven Caple Jr."],
+    "writers": ["Joby Harold", "Darnell Metayer", "Josh Peters"],
+    "stars": ["Anthony Ramos", "Dominique Fishback", "Luna Lauren Velez"],
+    "rating_imdb": {
+      "score": 6.0,
+      "votes": 122000
+    },
+    "rating_rt_tomatometer": {
+      "score": 51,
+      "reviews": 236
+    },
+    "rating_rt_popcorn": {
+      "score": 91,
+      "votes": 5000
+    }
+  },
+  {
+    "title": "Transformers: The Last Knight",
+    "year": "2017",
+    "length_minutes": 154,
+    "rating_age": "12A",
+    "genre": ["Alien Invasion", "Action", "Adventure", "Sci-Fi"],
+    "description": "Humans are at war with the Transformers, and Optimus Prime is gone. The key to saving the future lies buried in the secrets of the past and the hidden history of Transformers on Earth. Now, it's up to the unlikely alliance of inventor Cade Yeager, Bumblebee, an English lord and an Oxford professor to save the world.",
+    "director": ["Michael Bay"],
+    "writers": ["Art Marcum", "Matt Holloway", "Ken Nolan"],
+    "stars": ["Mark Wahlberg", "Anthony Hopkins", "Josh Duhamel"],
+    "rating_imdb": {
+      "score": 5.2,
+      "votes": 178000
+    },
+    "rating_rt_tomatometer": {
+      "score": 16,
+      "reviews": 255
+    },
+    "rating_rt_popcorn": {
+      "score": 43,
+      "votes": 25000
+    }
+  },
+
+  {
+    "title": "Transformers: Dark of the Moon",
+    "year": "2011",
+    "length_minutes": 154,
+    "rating_age": "12A",
+    "genre": [
+      "Alien Invasion",
+      "Car Action",
+      "Space Sci-Fi",
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "description": "Sam Witwicky (Shia LaBeouf) and his new girlfriend, Carly (Rosie Huntington-Whiteley), join the fray when the evil Decepticons renew their longstanding war against the Autobots. Optimus Prime (Peter Cullen) believes that resurrecting ancient Transformer Sentinel Prime (Leonard Nimoy), once the leader of the Autobots, may lead to victory. That decision, however, has devastating consequences; the war appears to tip in favor of the Decepticons, leading to a climactic battle in Chicago.",
+    "director": ["Michael Bay"],
+    "writers": ["Ehren Kruger"],
+    "stars": ["Shia LaBeouf", "Rosie Huntington-Whiteley", "Tyrese Gibson"],
+    "rating_imdb": {
+      "score": 6.2,
+      "votes": 444000
+    },
+    "rating_rt_tomatometer": {
+      "score": 35,
+      "reviews": 262
+    },
+    "rating_rt_popcorn": {
+      "score": 55,
+      "votes": 250000
     }
   }
 ]
