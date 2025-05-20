@@ -3,12 +3,12 @@ import SwiftUI
 struct MainTabView: View {
     var body: some View {
         TabView {
-            HomeTabView()
+            HomeView()
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
 
-            SettingsTabView()
+            SearchView()
                 .tabItem {
                     Label("Settings", systemImage: "gear")
                 }

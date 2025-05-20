@@ -11,7 +11,7 @@ import SwiftUI
 struct FYP_SHAPE_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            MovieListView()
+            MainTabView()
         }
     }
 }

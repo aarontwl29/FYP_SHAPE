@@ -1,6 +1,3 @@
-# movie.py
-# Compatible with Python 3.9+
-
 from typing import List, Dict, Optional, Union
 
 
