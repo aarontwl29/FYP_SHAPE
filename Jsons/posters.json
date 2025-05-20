@@ -1,0 +1,266 @@
+[
+  {
+    "name": "A Complete Unknown",
+    "poster_file": "Images/posters/a_complete_unknown.jpg"
+  },
+  {
+    "name": "A Minecraft Movie",
+    "poster_file": "Images/posters/a_minecraft_movie.jpg"
+  },
+  {
+    "name": "A Simple Favor",
+    "poster_file": "Images/posters/a_simple_favor.jpg"
+  },
+  {
+    "name": "A Working Man",
+    "poster_file": "Images/posters/a_working_man.jpg"
+  },
+  {
+    "name": "Anora",
+    "poster_file": "Images/posters/anora.jpg"
+  },
+  {
+    "name": "Another Simple Favor",
+    "poster_file": "Images/posters/another_simple_favor.jpg"
+  },
+  {
+    "name": "Babygirl",
+    "poster_file": "Images/posters/babygirl.jpg"
+  },
+  {
+    "name": "Beetlejuice Beetlejuice",
+    "poster_file": "Images/posters/beetlejuice_beetlejuice.jpg"
+  },
+  {
+    "name": "Black Bag",
+    "poster_file": "Images/posters/black_bag.jpg"
+  },
+  {
+    "name": "Black Widow",
+    "poster_file": "Images/posters/black_widow.jpg"
+  },
+  {
+    "name": "Captain America: Brave New World",
+    "poster_file": "Images/posters/captain_america_brave_new_world.jpg"
+  },
+  {
+    "name": "Clown in a Cornfield",
+    "poster_file": "Images/posters/clown_in_a_cornfield.jpg"
+  },
+  {
+    "name": "Companion",
+    "poster_file": "Images/posters/companion.jpg"
+  },
+  {
+    "name": "Conclave",
+    "poster_file": "Images/posters/conclave.jpg"
+  },
+  {
+    "name": "Death of a Unicorn",
+    "poster_file": "Images/posters/death_of_a_unicorn.jpg"
+  },
+  {
+    "name": "Disney's Snow White",
+    "poster_file": "Images/posters/disney_s_snow_white.jpg"
+  },
+  {
+    "name": "Drop",
+    "poster_file": "Images/posters/drop.jpg"
+  },
+  {
+    "name": "Fight or Flight",
+    "poster_file": "Images/posters/fight_or_flight.jpg"
+  },
+  {
+    "name": "Final Destination Bloodlines",
+    "poster_file": "Images/posters/final_destination_bloodlines.jpg"
+  },
+  {
+    "name": "Final Destination",
+    "poster_file": "Images/posters/final_destination.jpg"
+  },
+  {
+    "name": "Gladiator II",
+    "poster_file": "Images/posters/gladiator_ii.jpg"
+  },
+  {
+    "name": "Gladiator",
+    "poster_file": "Images/posters/gladiator.jpg"
+  },
+  {
+    "name": "Havoc",
+    "poster_file": "Images/posters/havoc.jpg"
+  },
+  {
+    "name": "Heart Eyes",
+    "poster_file": "Images/posters/heart_eyes.jpg"
+  },
+  {
+    "name": "Heretic",
+    "poster_file": "Images/posters/heretic.jpg"
+  },
+  {
+    "name": "Inception",
+    "poster_file": "Images/posters/inception.jpg"
+  },
+  {
+    "name": "Interstellar",
+    "poster_file": "Images/posters/interstellar.jpg"
+  },
+  {
+    "name": "Love Hurts",
+    "poster_file": "Images/posters/love_hurts.jpg"
+  },
+  {
+    "name": "Mickey 17",
+    "poster_file": "Images/posters/mickey_17.jpg"
+  },
+  {
+    "name": "Mission: Impossible - Dead Reckoning Part One",
+    "poster_file": "Images/posters/mission_impossible_dead_reckoning_part_one.jpg"
+  },
+  {
+    "name": "Nonnas",
+    "poster_file": "Images/posters/nonnas.jpg"
+  },
+  {
+    "name": "Nosferatu",
+    "poster_file": "Images/posters/nosferatu.jpg"
+  },
+  {
+    "name": "Novocaine",
+    "poster_file": "Images/posters/novocaine.jpg"
+  },
+  {
+    "name": "Now You See Me",
+    "poster_file": "Images/posters/now_you_see_me.jpg"
+  },
+  {
+    "name": "Once Upon a Time... In Hollywood",
+    "poster_file": "Images/posters/once_upon_a_time_in_hollywood.jpg"
+  },
+  {
+    "name": "Oppenheimer",
+    "poster_file": "Images/posters/oppenheimer.jpg"
+  },
+  {
+    "name": "Pride & Prejudice",
+    "poster_file": "Images/posters/pride_prejudice.jpg"
+  },
+  {
+    "name": "Rogue One: A Star Wars Story",
+    "poster_file": "Images/posters/rogue_one_a_star_wars_story.jpg"
+  },
+  {
+    "name": "Sinners",
+    "poster_file": "Images/posters/sinners.jpg"
+  },
+  {
+    "name": "Speak No Evil",
+    "poster_file": "Images/posters/speak_no_evil.jpg"
+  },
+  {
+    "name": "Star Wars: Episode I - The Phantom Menace",
+    "poster_file": "Images/posters/star_wars_episode_i_the_phantom_menace.jpg"
+  },
+  {
+    "name": "Star Wars: Episode II - Attack of the Clones",
+    "poster_file": "Images/posters/star_wars_episode_ii_attack_of_the_clones.jpg"
+  },
+  {
+    "name": "Star Wars: Episode III - Revenge of the Sith",
+    "poster_file": "Images/posters/star_wars_episode_iii_revenge_of_the_sith.jpg"
+  },
+  {
+    "name": "Star Wars: Episode IV - A New Hope",
+    "poster_file": "Images/posters/star_wars_episode_iv_a_new_hope.jpg"
+  },
+  {
+    "name": "Star Wars: Episode VI - Return of the Jedi",
+    "poster_file": "Images/posters/star_wars_episode_vi_return_of_the_jedi.jpg"
+  },
+  {
+    "name": "The Accountant 2",
+    "poster_file": "Images/posters/the_accountant_2.jpg"
+  },
+  {
+    "name": "The Accountant",
+    "poster_file": "Images/posters/the_accountant.jpg"
+  },
+  {
+    "name": "The Amateur",
+    "poster_file": "Images/posters/the_amateur.jpg"
+  },
+  {
+    "name": "The Dark Knight",
+    "poster_file": "Images/posters/the_dark_knight.jpg"
+  },
+  {
+    "name": "The Electric State",
+    "poster_file": "Images/posters/the_electric_state.jpg"
+  },
+  {
+    "name": "The Godfather",
+    "poster_file": "Images/posters/the_godfather.jpg"
+  },
+  {
+    "name": "The Gorge",
+    "poster_file": "Images/posters/the_gorge.jpg"
+  },
+  {
+    "name": "The Monkey",
+    "poster_file": "Images/posters/the_monkey.jpg"
+  },
+  {
+    "name": "The Old Guard",
+    "poster_file": "Images/posters/the_old_guard.jpg"
+  },
+  {
+    "name": "The Order",
+    "poster_file": "Images/posters/the_order.jpg"
+  },
+  {
+    "name": "The Substance",
+    "poster_file": "Images/posters/the_substance.jpg"
+  },
+  {
+    "name": "Thunderbolts*",
+    "poster_file": "Images/posters/thunderbolts.jpg"
+  },
+  {
+    "name": "Twilight",
+    "poster_file": "Images/posters/twilight.jpg"
+  },
+  {
+    "name": "Until Dawn",
+    "poster_file": "Images/posters/until_dawn.jpg"
+  },
+  {
+    "name": "Warfare",
+    "poster_file": "Images/posters/warfare.jpg"
+  },
+  {
+    "name": "Wicked",
+    "poster_file": "Images/posters/wicked.jpg"
+  },
+  {
+    "name": "Transformers: Revenge of the Fallen",
+    "poster_file": "Images/posters/transformers_revenge_of_the_fallen.jpg"
+  },
+  {
+    "name": "Transformers",
+    "poster_file": "Images/posters/transformers.jpg"
+  },
+  {
+    "name": "Transformers: Rise of the Beasts",
+    "poster_file": "Images/posters/transformers_rise_of_the_beasts.jpg"
+  },
+  {
+    "name": "Transformers: The Last Knight",
+    "poster_file": "Images/posters/transformers_the_last_knight.jpg"
+  },
+  {
+    "name": "Transformers: Dark of the Moon",
+    "poster_file": "Images/posters/transformers_dark_of_the_moon.jpg"
+  }
+]

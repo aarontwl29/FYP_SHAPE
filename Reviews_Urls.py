@@ -373,7 +373,7 @@ movies = [
     
     {
         "url": "https://www.rottentomatoes.com/m/transformers_revenge_of_the_fallen/reviews?type=user",
-        "name": "Transformers: Revenge of the Fallen Reviews"
+        "name": "Transformers: Revenge of the Fallen"
     },
     {
         "url": "https://www.rottentomatoes.com/m/transformers_the_movie/reviews?type=user",
