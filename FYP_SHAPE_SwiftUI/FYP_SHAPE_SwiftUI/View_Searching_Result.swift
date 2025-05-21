@@ -13,6 +13,9 @@ struct SearchResultView: View {
     @State private var selectedMovie: Movie? = nil
     @State private var showDetail = false
   
+    func imageName(from name: String) -> String {
+        return name.trimmingCharacters(in: .whitespacesAndNewlines) + ".jpg"
+    }
 
     var headerText: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -29,8 +32,10 @@ struct SearchResultView: View {
                         .font(.title3)
                         .bold()
                 case .director, .stars:
+                    let resolvedName = imageName(from: queryText)
+
                     HStack(alignment: .top, spacing: 12) {
-                        Image(imageName(from: queryText))
+                        Image(uiImage: UIImage(named: resolvedName) ?? UIImage(named: "user_icon")!)
                             .resizable()
                             .frame(width: 40, height: 40)
                             .clipShape(Circle())
@@ -66,10 +71,7 @@ struct SearchResultView: View {
         return parts.joined(separator: ", ")
     }
 
-    func imageName(from name: String) -> String {
-        let formatted = name.lowercased().replacingOccurrences(of: " ", with: "_")
-        return UIImage(named: formatted) != nil ? formatted : "user_icon"
-    }
+   
 
     var body: some View {
         VStack {

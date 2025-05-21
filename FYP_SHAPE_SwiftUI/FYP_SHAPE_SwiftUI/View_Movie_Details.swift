@@ -318,6 +318,7 @@ struct MovieDetailView: View {
                                     $0.stars.contains { $0.localizedCaseInsensitiveContains(trimmed) }
                                 }
                                 showSearchSheet = true
+                                print(queryText)
                             }) {
                                 VStack(spacing: 6) {
                                     // Fixed region for image
