@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct MovieDetailView: View {
+    @EnvironmentObject var userManager: UserManager
+    
     @StateObject private var viewModel = MovieViewModel()
     let movie: Movie
     @State private var relatedMovies: [Movie] = []
@@ -15,7 +17,13 @@ struct MovieDetailView: View {
     
     @State private var showRelatedSheet = false
     @State private var relatedMovie: Movie? = nil
+    @State private var recommendedMovies: [Movie] = []
     
+    
+    @State private var isInWatchlist = false
+    @State private var showRatingSheet = false
+    @State private var currentUserRating: Int? = nil
+
     
     var body: some View {
         
@@ -227,17 +235,67 @@ struct MovieDetailView: View {
                         }
                     }
                 }
-                .padding(.top, 12)
+                .padding(.top, 5)
                 
                 
                 
                 
-                Button("View All Reviews") {
-                    showReviews = true
+                HStack {
+                    // 🔴 Left: View Reviews
+                    Button(action: {
+                        showReviews = true
+                    }) {
+                        Label("Reviews", systemImage: "text.bubble")
+                            .font(.caption)
+                            .padding(.horizontal, 10)
+                            .padding(.vertical, 4)
+                            .background(Color.red.opacity(0.15))
+                            .foregroundColor(.red)
+                            .cornerRadius(10)
+                    }
+
+                    Spacer()
+
+                    // ⭐ Center: Rate
+                    Button(action: {
+                        showRatingSheet = true
+                    }) {
+                        Label {
+                            Text(currentUserRating != nil ? "Rated: \(currentUserRating!)/10" : "Rate")
+                        } icon: {
+                            Image(systemName: currentUserRating != nil ? "star.fill" : "star")
+                                .foregroundColor(.yellow)
+                        }
+                        .font(.caption)
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 4)
+                        .background(Color.yellow.opacity(0.2))
+                        .cornerRadius(10)
+                    }
+
+                    Spacer()
+
+                    // 📌 Right: Watchlist
+                    Button(action: {
+                        isInWatchlist.toggle()
+                        if isInWatchlist {
+                            userManager.user.savedTitles.append(movie.title)
+                        } else {
+                            userManager.user.savedTitles.removeAll { $0 == movie.title }
+                        }
+                    }) {
+                        Label(isInWatchlist ? "Saved" : "Watchlist", systemImage: isInWatchlist ? "bookmark.fill" : "bookmark")
+                            .font(.caption)
+                            .padding(.horizontal, 10)
+                            .padding(.vertical, 4)
+                            .background(Color.blue.opacity(0.2))
+                            .cornerRadius(10)
+                    }
                 }
-                .font(.caption)
-                .padding(.top, 4)
-                .foregroundColor(.red)
+                .padding(.top, 8)
+
+                
+                
                 
                 
                 
@@ -299,7 +357,7 @@ struct MovieDetailView: View {
                     .font(.headline)
                     .padding(.top, 12)
                     .padding(.horizontal, 12)
-
+                
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 12) {
                         ForEach(relatedMovies, id: \.id) { movie in
@@ -329,27 +387,39 @@ struct MovieDetailView: View {
                     }
                     .padding(.horizontal, 12)
                 }
-
                 
-                // MARK: - You May Interested
-                Text("You May Interested")
+                
+                // MARK: - You May Be Interested
+                Text("You May Be Interested")
                     .font(.headline)
                     .padding(.top, 12)
                     .padding(.horizontal, 12)
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 12) {
-                        ForEach(0..<5) { _ in
-                            VStack {
-                                if let poster = movie.posterImageName {
-                                    Image(poster)
-                                        .resizable()
-                                        .scaledToFill()
-                                        .frame(width: 100, height: 150)
-                                        .clipped()
-                                        .cornerRadius(8)
+                        ForEach(recommendedMovies, id: \.id) { movie in
+                            Button(action: {
+                                relatedMovie = movie
+                                DispatchQueue.main.async {
+                                    showRelatedSheet = true
+                                }
+                            }) {
+                                VStack {
+                                    if let poster = movie.posterImageName {
+                                        Image(poster)
+                                            .resizable()
+                                            .scaledToFill()
+                                            .frame(width: 100, height: 150)
+                                            .clipped()
+                                            .cornerRadius(8)
+                                    }
+                                    Text(movie.title)
+                                        .font(.caption2)
+                                        .lineLimit(1)
+                                        .frame(width: 100)
                                 }
                             }
+                            .buttonStyle(PlainButtonStyle())
                         }
                     }
                     .padding(.horizontal, 12)
@@ -366,11 +436,34 @@ struct MovieDetailView: View {
             .padding()
         }
         .onAppear {
+            if let rating = userManager.user.ratedMovies[movie.title] {
+                currentUserRating = rating
+            }
+
+            
+            isInWatchlist = userManager.user.savedTitles.contains(movie.title)
+            
             viewModel.fetchMovies()
-            viewModel.fetchRelatedMovies(for: movie.title) { result in
-                            self.relatedMovies = result
-                        }
+            
+            // 👇 Force global movie list to allow matching in fetchRecommendations
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                GlobalMovies.shared.movies = viewModel.allMovies
+                
+                viewModel.fetchRelatedMovies(for: movie.title) { result in
+                    self.relatedMovies = result
+                }
+                
+                if !userManager.user.recentClickedTitles.contains(movie.title) {
+                    userManager.user.recentClickedTitles.append(movie.title)
+                }
+                
+                userManager.fetchRecommendations(for: movie.title) { result in
+                    print("🟢 Recommended UI update: \(result.map(\.title))")
+                    self.recommendedMovies = result
+                }
+            }
         }
+        
         
         .sheet(isPresented: $showReviews) {
             if let poster = movie.poster_path {
@@ -392,5 +485,14 @@ struct MovieDetailView: View {
                 sortByYear: false
             )
         }
+        .sheet(isPresented: $showRatingSheet) {
+            RatingInputView(movieTitle: movie.title, isPresented: $showRatingSheet)
+                .environmentObject(userManager)
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .didRateMovie)) { note in
+            guard let ratedTitle = note.object as? String, ratedTitle == movie.title else { return }
+            currentUserRating = userManager.user.ratedMovies[movie.title]
+        }
+        
     }
 }

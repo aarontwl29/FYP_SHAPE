@@ -9,6 +9,7 @@ enum SearchType: String, CaseIterable, Identifiable {
 
 struct SearchView: View {
     
+    @EnvironmentObject var userManager: UserManager
 
     
     @StateObject private var viewModel = MovieViewModel()

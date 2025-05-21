@@ -44,6 +44,18 @@ def get_movies():
     return jsonify([movie_to_dict(m) for m in MOVIES.values()])
 
 
+@app.route("/all_users", methods=["GET"])
+def all_users():
+    try:
+        file_path = "Jsons/Users.json"
+        with open(file_path, "r", encoding="utf-8") as f:
+            raw_users = json.load(f)
+        print(f"✅ Loaded {len(raw_users)} users from {file_path}")
+        return jsonify(raw_users)
+    except Exception as e:
+        print(f"❌ Failed to load users: {e}")
+        return jsonify({"error": str(e)}), 500
+
 
 
 
@@ -96,6 +108,70 @@ def get_recommendations():
 
 
 
+@app.route("/profile_recommendation", methods=["POST"])
+def profile_recommendation():
+    """
+    Expects JSON:
+    {
+        "user": { ... }
+    }
+
+    Returns: Top 10 recommended movie titles based on user profile (no filtering of watched)
+    """
+    try:
+        data = request.get_json()
+        user_data = data.get("user")
+        if not user_data:
+            return jsonify({"error": "Missing user object"}), 400
+
+        user = User.from_dict(user_data)
+
+        # Load all known users
+        with open("Jsons/Users.json", "r", encoding="utf-8") as f:
+            all_profiles = json.load(f)
+
+        followed_profiles = [
+            User.from_dict(u)
+            for u in all_profiles
+            if u["user_id"] in user.similar_users
+        ]
+
+        print(f"🧠 Parsed user ID: {user.id}")
+        print(f"   Following: {user.similar_users}")
+        print(f"   Followed profiles: {len(followed_profiles)}")
+
+        from recommender import recommend_user_profile_full
+        titles = recommend_user_profile_full(user, MOVIES, followed_profiles, top_k=10)
+        print("🎯 Final Top 10 Titles:", titles)
+        return jsonify(titles)
+
+    except Exception as e:
+        print("❌ Profile recommendation error:", str(e))
+        return jsonify({"error": str(e)}), 500
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @app.route("/next_suggestion", methods=["POST"])
 def next_suggestion():
@@ -106,7 +182,7 @@ def next_suggestion():
         "movie_title": "A Complete Unknown"
     }
 
-    Returns: Top 5 recommended movies based on updated user
+    Returns: List of top 5 recommended movie titles.
     """
     try:
         data = request.get_json()
@@ -116,20 +192,49 @@ def next_suggestion():
         if not user_data or not clicked_title:
             return jsonify({"error": "Missing user or movie_title"}), 400
 
+        print("Incoming user keys:", list(user_data.keys()))
+        print("Raw user JSON:", user_data)
+
+
         # Convert user dict → User object
         user = User.from_dict(user_data)
 
-        # Add the clicked movie to user's history
+        # Normalize the clicked title
+        normalized = normalize_title(clicked_title)
+        
+        print("Clicked title received:", clicked_title)
+        print("Normalized title:", normalize_title(clicked_title))
+        print("Available keys (first 10):", list(MOVIES.keys())[:10])
+
+        if normalized not in MOVIES:
+            return jsonify({"error": f"Movie '{clicked_title}' not found"}), 404
+
+        # Update user's click history
         if clicked_title not in user.recent_clicked_titles:
             user.recent_clicked_titles.append(clicked_title)
 
-        # Run recommender
+        # Get recommendations (list of Movie objects)
         recommendations = recommend_next_movies(user, MOVIES)
 
-        return jsonify(recommendations)
+        # Return only the movie titles
+        titles = [movie["title"] for movie in recommendations]
+        
+
+
+        return jsonify(titles)
 
     except Exception as e:
+        print("❌ Recommendation error:", str(e))
         return jsonify({"error": str(e)}), 500
+
+
+
+
+
+
+
+
+
 
 
 

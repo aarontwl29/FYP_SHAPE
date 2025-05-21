@@ -1,28 +1,26 @@
-from typing import List, Dict
-from datetime import datetime
+from dataclasses import dataclass
+from typing import List, Dict, Optional
 
+@dataclass
 class User:
-    def __init__(self,
-                 user_id: str,
-                 recent_clicked_titles: List[str] = [],
-                 rated_movies: Dict[str, int] = {},
-                 saved_titles: List[str] = [],
-                 preferred_genres: List[str] = [],
-                 preferred_keywords: List[str] = [],
-                 last_active: str = None,
-                 similar_users: List[str] = []):
-        self.user_id = user_id
-        self.recent_clicked_titles = recent_clicked_titles  # ["A Complete Unknown", "Interstellar"]
-        self.rated_movies = rated_movies                    # {"A Complete Unknown": 8}
-        self.saved_titles = saved_titles
-        self.preferred_genres = preferred_genres
-        self.preferred_keywords = preferred_keywords
-        self.last_active = last_active or datetime.now().isoformat()
-        self.similar_users = similar_users
-
-    def to_dict(self):
-        return self.__dict__
+    id: str
+    recent_clicked_titles: List[str]
+    rated_movies: Dict[str, int]
+    saved_titles: List[str]
+    preferred_genres: List[str]
+    preferred_keywords: List[str]
+    last_active: Optional[str]
+    similar_users: List[str]
 
     @staticmethod
-    def from_dict(data: Dict):
-        return User(**data)
+    def from_dict(data: dict) -> "User":
+        return User(
+            id=data.get("user_id", ""),  # supports JSON key
+            recent_clicked_titles=data.get("recent_clicked_titles", []),
+            rated_movies=data.get("rated_movies", {}),
+            saved_titles=data.get("saved_titles", []),
+            preferred_genres=data.get("preferred_genres", []),
+            preferred_keywords=data.get("preferred_keywords", []),
+            last_active=data.get("last_active", None),
+            similar_users=data.get("similar_users", [])
+        )

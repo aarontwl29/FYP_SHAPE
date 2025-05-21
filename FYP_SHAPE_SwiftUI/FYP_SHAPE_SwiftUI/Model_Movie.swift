@@ -167,5 +167,60 @@ class MovieViewModel: ObservableObject {
                 }
             }.resume()
         }
+    
+    func fetchProfileRecommendations(for user: UserProfile, completion: @escaping ([Movie]) -> Void) {
+        guard let url = URL(string: "http://127.0.0.1:5000/profile_recommendation") else { return }
+
+        guard let jsonData = try? JSONEncoder().encode(user),
+              let payload = try? JSONSerialization.jsonObject(with: jsonData) as? [String: Any],
+              let requestBody = try? JSONSerialization.data(withJSONObject: ["user": payload]) else {
+            print("⚠️ Failed to encode user for profile recommendation")
+            return
+        }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = requestBody
+
+        print("📤 Sending profile for recommendation: \(user.id)")
+
+        URLSession.shared.dataTask(with: request) { data, _, error in
+            guard let data = data else {
+                print("❌ No data from /profile_recommendation:", error?.localizedDescription ?? "unknown")
+                return
+            }
+
+            do {
+                let recommendedTitles = try JSONDecoder().decode([String].self, from: data)
+                print("✅ Titles from server:", recommendedTitles)
+
+                let matched = recommendedTitles.compactMap { title in
+                    GlobalMovies.shared.movies.first {
+                        self.normalizeTitle($0.title) == self.normalizeTitle(title)
+                    }
+                }
+
+                print("🎯 Matched titles:", matched.map { $0.title })
+
+                DispatchQueue.main.async {
+                    completion(matched)
+                }
+            } catch {
+                print("❌ Profile recommendation decode error:", error)
+            }
+        }.resume()
+    }
+
+    // Add this helper in the same file:
+    private func normalizeTitle(_ title: String) -> String {
+        title.lowercased()
+            .replacingOccurrences(of: ":", with: "")
+            .replacingOccurrences(of: "'", with: "")
+            .replacingOccurrences(of: "\"", with: "")
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+
+
 }
 

@@ -7,27 +7,31 @@ from utils import normalize_title
 from user import User  
 from collections import Counter
 from typing import List
+from movie import Movie
 
 # ---------------------------------------------------------- #
 def get_unified_rating(movie: Movie) -> float:
-    imdb_score = movie.ratings.get("imdb", {}).get("score", 0)
-    imdb_votes = movie.ratings.get("imdb", {}).get("votes", 0)
+    imdb_score = movie.ratings.get("imdb", {}).get("score", 0) or 0
+    imdb_votes = movie.ratings.get("imdb", {}).get("votes") or 0
 
-    tomato_score = movie.ratings.get("rt_tomatometer", {}).get("score", 0) / 10.0
-    tomato_reviews = movie.ratings.get("rt_tomatometer", {}).get("reviews", 0)
+    tomato_score = (movie.ratings.get("rt_tomatometer", {}).get("score", 0) or 0) / 10.0
+    tomato_reviews = movie.ratings.get("rt_tomatometer", {}).get("reviews") or 0
 
-    popcorn_score = movie.ratings.get("rt_popcorn", {}).get("score", 0) / 10.0
-    popcorn_votes = movie.ratings.get("rt_popcorn", {}).get("votes", 0)
+    popcorn_score = (movie.ratings.get("rt_popcorn", {}).get("score", 0) or 0) / 10.0
+    popcorn_votes = movie.ratings.get("rt_popcorn", {}).get("votes") or 0
 
     total_votes = imdb_votes + tomato_reviews + popcorn_votes
     if total_votes == 0:
         return 0.0
 
-    total_score = (imdb_score * imdb_votes +
-                   tomato_score * tomato_reviews +
-                   popcorn_score * popcorn_votes)
+    total_score = (
+        imdb_score * imdb_votes +
+        tomato_score * tomato_reviews +
+        popcorn_score * popcorn_votes
+    )
 
     return round(total_score / total_votes, 1)
+
 
 # ---------------------------------------------------------- #
 def recommend_next_movies(user: User, movies: dict, top_k: int = 5) -> List[dict]:
@@ -83,6 +87,82 @@ def recommend_next_movies(user: User, movies: dict, top_k: int = 5) -> List[dict
 
     top = sorted(scored_movies, key=lambda x: x[1], reverse=True)[:top_k]
     return [movies[k].__dict__ for k, _ in top]
+
+
+
+def recommend_user_profile_full(user: User, movies: dict, followed_profiles: List[User] = [], top_k: int = 10) -> List[str]:
+    """
+    Returns top N movies based on user's preferences, boosted by followed users' preferences.
+    Does NOT filter out already-viewed movies.
+    """
+    genre_counter = Counter()
+    keyword_counter = Counter()
+    director_counter = Counter()
+    star_counter = Counter()
+
+    def update_counters_from_titles(titles):
+        for title in titles:
+            norm = normalize_title(title)
+            movie = movies.get(norm)
+            if not movie:
+                continue
+            genre_counter.update(movie.genres)
+            keyword_counter.update(movie.hashtags.get("top_keywords", []))
+            director_counter.update([movie.director])
+            star_counter.update(movie.stars)
+
+    # User's own history
+    history_titles = (
+        user.recent_clicked_titles +
+        list(user.rated_movies.keys()) +
+        user.saved_titles
+    )
+    update_counters_from_titles(history_titles)
+
+    # Followed users' influence (heavily weighted)
+    for followed in followed_profiles:
+        followed_titles = (
+            followed.recent_clicked_titles +
+            list(followed.rated_movies.keys()) +
+            followed.saved_titles
+        )
+        update_counters_from_titles(followed_titles * 3)  # Boost their weight 3x
+
+    if not any((genre_counter, keyword_counter, director_counter, star_counter)):
+        print("⚠️ No user or followed history found. Using unified ratings only.")
+        scored_movies = [
+            (key, get_unified_rating(movie)) for key, movie in movies.items()
+        ]
+    else:
+        scored_movies = []
+        for key, movie in movies.items():
+            genre_score = sum(genre_counter[g] for g in movie.genres)
+            keyword_score = sum(keyword_counter[k] for k in movie.hashtags.get("top_keywords", []))
+            director_score = director_counter[movie.director]
+            star_score = sum(star_counter[s] for s in movie.stars)
+
+            profile_score = (
+                2.0 * genre_score +
+                1.5 * keyword_score +
+                1.0 * director_score +
+                0.5 * star_score
+            )
+
+            unified = get_unified_rating(movie)
+            final_score = profile_score + 0.3 * unified
+
+            scored_movies.append((key, final_score))
+
+    top = sorted(scored_movies, key=lambda x: x[1], reverse=True)[:top_k]
+    return [movies[k].title for k, _ in top]
+
+
+
+
+
+
+
+
 
 # ---------------------------------------------------------- #
 if __name__ == "__main__":

@@ -1,0 +1,73 @@
+[
+  {
+    "user_id": "user_horror1",
+    "recent_clicked_titles": ["Final Destination", "Heretic", "Heart Eyes"],
+    "rated_movies": {
+      "Final Destination": 8,
+      "Until Dawn": 7,
+      "Heretic": 9
+    },
+    "saved_titles": ["Until Dawn", "Heart Eyes", "Clown in a Cornfield"],
+    "preferred_genres": ["Horror", "Slasher Horror", "Supernatural Horror"],
+    "preferred_keywords": ["death", "blood", "survive"],
+    "last_active": "2025-05-21T10:00:00",
+    "similar_users": ["user_horror2"]
+  },
+  {
+    "user_id": "user_horror2",
+    "recent_clicked_titles": [
+      "Clown in a Cornfield",
+      "Speak No Evil",
+      "The Monkey"
+    ],
+    "rated_movies": {
+      "Speak No Evil": 9,
+      "The Monkey": 7
+    },
+    "saved_titles": ["Final Destination", "Heretic", "Heart Eyes"],
+    "preferred_genres": ["Horror", "Psychological Horror", "Dark Comedy"],
+    "preferred_keywords": ["killer", "trap", "fear"],
+    "last_active": "2025-05-21T10:05:00",
+    "similar_users": ["user_horror1"]
+  },
+  {
+    "user_id": "user_starwars",
+    "recent_clicked_titles": [
+      "Star Wars: Episode I - The Phantom Menace",
+      "Star Wars: Episode III - Revenge of the Sith",
+      "Rogue One: A Star Wars Story"
+    ],
+    "rated_movies": {
+      "Star Wars: Episode IV - A New Hope": 10,
+      "Star Wars: Episode VI - Return of the Jedi": 9
+    },
+    "saved_titles": [
+      "Star Wars: Episode II - Attack of the Clones",
+      "Star Wars: Episode III - Revenge of the Sith"
+    ],
+    "preferred_genres": ["Space Sci-Fi", "Sci-Fi Epic", "Adventure Epic"],
+    "preferred_keywords": ["rebels", "jedi", "galaxy"],
+    "last_active": "2025-05-21T09:50:00",
+    "similar_users": []
+  },
+  {
+    "user_id": "user_transformers",
+    "recent_clicked_titles": [
+      "Transformers",
+      "Transformers: Dark of the Moon",
+      "Transformers: The Last Knight"
+    ],
+    "rated_movies": {
+      "Transformers": 8,
+      "Transformers: Revenge of the Fallen": 7
+    },
+    "saved_titles": [
+      "Transformers: Rise of the Beasts",
+      "Transformers: Dark of the Moon"
+    ],
+    "preferred_genres": ["Alien Invasion", "Car Action", "Sci-Fi"],
+    "preferred_keywords": ["autobots", "decepticons", "battle"],
+    "last_active": "2025-05-21T09:55:00",
+    "similar_users": []
+  }
+]
